@@ -5,15 +5,41 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
-    <div>
-        <div class="dslogo"></div>
+    <div class="navbar">
+        <img class="navlogo" src={% static './img/navlogo.png' %}/>
         <div class="nav">
-            <div>HOME</div>
-            <div>ABOUT</div>
-            <div>ORG</div>
-            <div>RECRUIT</div>
-            <div>TALK</div>
+            <div>
+              <a href="{% url 'home' %}">
+                <div class="navtxt">HOME</div>
+              </a>
+            </div>
+            <div>
+              <a href="{% url 'home' %}">
+                <div class="navtxt">ABOUT</div>
+              </a>
+            </div>
+            <div>
+              <a href="{% url 'home' %}">
+                <div class="navtxt">ORG</div>
+              </a>
+            </div>
+            <div>
+              <a href="{% url 'home' %}">
+                <div class="navtxt">RECRUIT</div>
+              </a>
+            </div>
+            <div>
+              <a href="{% url 'home' %}">
+                <div class="navtxt">TALK</div>
+              </a>
+            </div>
         </div>
+        <!-- <script src="/static/js/nav_activate.js"></script> -->
     </div>
+    <div class="navbar_mobile">
+      <img class="navlogo_mobile" src={% static './img/navlogo.png' %}/>
+      <a href="javascript:;" class="btn-menu"></a>
+    </div>
+    <script src="/static/js/menu.js"></script>
   </body>
 </html>

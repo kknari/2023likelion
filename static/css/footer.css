@@ -1,0 +1,136 @@
+@media screen and (min-width:1029px) {
+	/* Desktop */
+
+    .footerbox{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 345px;
+        flex-wrap: nowrap;
+    }
+    .footlogo_mobile{
+        display: none;
+    }
+
+    .footlogo{
+        display: flex;
+        width: 300px;
+        margin-right: 173px;
+    }
+    .contactbox{
+        display: flex;
+        flex-direction: column;
+        height: 168px;
+        justify-content: space-between;
+    }
+   
+}
+@media screen and (min-width:768px) and (max-width: 1029px) {
+	/* Tablet */
+    .footerbox{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 411px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .footlogo_mobile{
+        display: flex;
+        width: 300px;
+    }
+
+    .footlogo{
+        display: none;
+    }
+
+    .contactbox{
+        display: flex;
+        flex-direction: column;
+        height: 168px;
+        justify-content: space-between;
+    }
+  
+}
+@media screen and (max-width:767px){ 
+    .footerbox{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 411px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    .footlogo_mobile{
+        display: flex;
+        width: 300px;
+    }
+
+    .footlogo{
+        display: none;
+    }
+
+    .contactbox{
+        display: flex;
+        flex-direction: column;
+        height: 168px;
+        justify-content: space-between;
+    }
+    
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+.cttitle{
+    color: #858593;
+    font-size: 16px;
+}
+.contactbox{
+    display: flex;
+    flex-direction: column;
+}
+.ctbox > a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+.ctbox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
