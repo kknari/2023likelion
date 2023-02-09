@@ -52,6 +52,7 @@
         height: 411px;
         flex-wrap: nowrap;
         flex-direction: column;
+        padding-left: 40px;
     }
 
     .footlogo_mobile{

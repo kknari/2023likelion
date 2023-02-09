@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="navbar">
-        <img class="navlogo" src={% static './img/navlogo.png' %}/>
+      <a href="{% url 'home' %}"> <img class="navlogo" src={% static './img/navlogo.png' %}/> </a>
         <div class="nav">
             <div>
               <a href="{% url 'home' %}">
@@ -37,7 +37,7 @@
         <!-- <script src="/static/js/nav_activate.js"></script> -->
     </div>
     <div class="navbar_mobile">
-      <img class="navlogo_mobile" src={% static './img/navlogo.png' %}/>
+      <a href="{% url 'home' %}"> <img class="navlogo_mobile" src={% static './img/navlogo.png' %}/></a>
       <a href="javascript:;" class="btn-menu"></a>
     </div>
     <script src="/static/js/menu.js"></script>
