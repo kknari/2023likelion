@@ -38,7 +38,16 @@
     </div>
     <div class="navbar_mobile">
       <a href="{% url 'home' %}"> <img class="navlogo_mobile" src={% static './img/navlogo.png' %}/></a>
-      <a href="javascript:;" class="btn-menu"></a>
+      <a href="javascript:;" class="btn-menu" onclick="Openmenu()"></a>
+      <div  class="nav_detailbox">
+        <ul>
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'home' %}">ABOUT</a></li>
+            <li><a href="{% url 'home' %}">ORG</a></li>
+            <li><a href="{% url 'home' %}">RECRUIT</a></li>
+            <li><a href="{% url 'home' %}">TALK</a></li>
+        </ul>
+      </div>
     </div>
     <script src="/static/js/menu.js"></script>
   </body>
