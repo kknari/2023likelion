@@ -22,5 +22,4 @@ urlpatterns = [
     path('', views.main, name="main"),
     path('talk/', views.talk, name="talk"),
     path('create/', views.create, name='create'),
-
 ]
