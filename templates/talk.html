@@ -1,0 +1,33 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/talk.css' %}">
+</head>
+
+<div class="body">
+    {% for post in posts %}
+        <div class="content">
+            <!--질문-->
+            <h3>{{ post.content }}</h3>
+            <h4>{{ post.date }}</h4>
+        </div>
+        
+        {% for comment in comments %}
+            {% if post.pk == comment.post.pk %}
+                <!--질문 답변(댓글)-->
+                <p class="comment">{{ comment }}</p>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    
+</div>
+
+<!--댓글 작성-->
+<form action="{% url 'create' %}" method="POST">
+    {% csrf_token %}
+    <div>
+        <textarea name="content" id="content" cols="50" rows="10"></textarea>
+    </div>
+    <input type="submit" value="글 생성하기">
+</form>
+    
+

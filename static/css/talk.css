@@ -1,0 +1,13 @@
+.content {
+    border-style: dotted;
+    border-color: black;
+    width: 300px;
+    margin-top: 50px;
+    
+}
+.comment {
+    border-style: dotted;
+    border-color: black;
+    width: 300px;
+    margin-top: 20px;
+}
