@@ -159,8 +159,8 @@
     }
 
     #vouter{
-        width: 935px;
-        height: 519.4px;
+        width: 932px;
+        height: 490px;
         border-radius: 20px;
         overflow: hidden;
         position: relative;
@@ -259,7 +259,7 @@
   
 }
 
-/* 모바일 버전 */
+
 @media screen and (min-width:768px) and (max-width: 1079px) {
 	/* Tablet */
     .main{
@@ -289,14 +289,66 @@
         align-items: center;
         flex-direction: column;
     }
-    .section2{
-        display: flex;
-        margin: 0px 40px;
-    }
-    .section2_mobile{
-        display: none;
-    }
+        /*섹션 2*/
+        .section2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 156px 160px 156px;
+        }
+    
+        .innersection2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 0px 24px 0px 24px;
+            height: 1354px;
+            justify-content: space-evenly;
+        }
+        
+        .sctimg2{
+            width: 434px;
+            height: 317px;
+            background-color: rgba(232, 201, 210, 0.58);
+            border-radius: 20px;
+        }
+        .sctimg1, .sctimg3{
+            width: 434px;
+            height: 317px;
+            background-color: rgba(232, 201, 210, 0.58);
+            border-radius: 20px;
+        }
+    
+        .sctbox1,.sctbox2, .sctbox3{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 64px;
+            justify-content: center;
+            align-items: center;
+        }  
+    
+        .box3title, .box2title, .box1title{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 0.8;
+        }
+        .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
+            font-size: 40px;
+            font-weight: bold;
+            color: #80243F;
+            line-height: 1.4;
+        }
+        .box1detail, .box2detail, .box3detail{
+            font-size: 11px;
+            color: #858694;
+        }
+        /*섹션 2 끝*/
+    
 }
+
+/* 여기까지가 좌우 카드 느낌 정렬*/
 
 @media screen and (min-width:719px) and (max-width: 767px) {
 	/* Tablet */
