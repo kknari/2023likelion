@@ -1,7 +1,7 @@
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100px, -50%);
     }
     to {
         opacity: 1;
@@ -94,6 +94,7 @@
         align-content: center;
         flex-wrap: nowrap;
         border-radius: 0px 0px 0px 0px;
+        position: relative;
     }
     .navlogo_mobile{
         width: 240px;
@@ -104,7 +105,7 @@
     .nav_detailbox{
         position: fixed;
         top: 80px;
-        height: 150px;
+        height: 320px;
         width: 100%;
         z-index: 100;
         /* animation: fadeInDown 1s; */
@@ -125,6 +126,20 @@
         display: block;
         transition: 0.5s ease;
       }
+
+    .toggle .show{
+        display: none;
+    }
+
+    .innerdtail{
+        padding: 16px 25px;
+        display: flex;
+        height: 100%;
+        flex-flow: row nowrap;
+        place-content: center space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
   
 }
 @media screen and (max-width:767px){ 
@@ -199,3 +214,18 @@
 
 /*햄버거 버버튼  끝*/
 
+.innerdtail > ul > li > a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.innerdtail > ul > li{
+    list-style: none;
+}
+
+.innerdtail > ul{
+    line-height: 40px;
+}
