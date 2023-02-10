@@ -168,6 +168,45 @@
         display: block;
     }
 
+    .nav_detailbox{
+        position: fixed;
+        top: 80px;
+        height: 320px;
+        width: 100%;
+        z-index: 100;
+        /* animation: fadeInDown 1s; */
+        background-color: white;
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+        position: fixed;
+        top: 80px;
+        height: 150px !important;
+        width: 100% !important;
+        z-index: 100;
+        animation: fadeInDown 1s;
+        background-color: white;
+        height: 250px !important;
+        display: block;
+        transition: 0.5s ease;
+      }
+
+    .toggle .show{
+        display: none;
+    }
+
+    .innerdtail{
+        padding: 16px 25px;
+        display: flex;
+        height: 100%;
+        flex-flow: row nowrap;
+        place-content: center space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
 }
 
 *{
