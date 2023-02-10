@@ -10,7 +10,7 @@
         padding-bottom: 30px;
         padding-top: 15px;
         background-color: black;
-        position: fixed;
+        position: relative;
         left: 0;
         right: 0;
         bottom: 0;
@@ -45,13 +45,14 @@
         padding-bottom: 30px;
         padding-top: 15px;
         background-color: black;
-        position: fixed;
+        position: relative;
         left: 0;
         right: 0;
         bottom: 0;
         height: 411px;
         flex-wrap: nowrap;
         flex-direction: column;
+        padding-left: 40px;
     }
 
     .footlogo_mobile{
@@ -81,7 +82,7 @@
         padding-bottom: 30px;
         padding-top: 15px;
         background-color: black;
-        position: fixed;
+        position: relative;
         left: 0;
         right: 0;
         bottom: 0;
