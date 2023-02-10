@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+<head> 
+  {% load static %}
+  {% block extrahead %}
+  <link rel="stylesheet" href="{% static './css/main.css' %}">
+  {% endblock %}
+</head>
+
+{% block content%}
+<div>
+    {% for post in posts %}
+        <div>
+            <!--질문-->
+            <h3>{{ post.content }}</h3>
+            <h4>{{ post.date | date:"Y.m.d" }}</h4>
+        </div>
+        
+        {% for comment in comments %}
+            {% if post.pk == comment.post.pk %}
+                <!--질문 답변(댓글)-->
+                <p>{{ comment }}</p>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    
+</div>
+
+<!--글 작성-->
+<form action="{% url 'create' %}" method="POST">
+    {% csrf_token %}
+    <div>
+        <textarea name="content" id="content" cols="100" rows="5"></textarea>
+    </div>
+    <input type="submit" value="글 생성하기">
+</form>
+{% endblock %}

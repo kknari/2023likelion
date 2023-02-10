@@ -20,4 +20,10 @@ from dsapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.main, name="home"),
+    path('talk/', views.talk, name="talk"),
+    path('create/', views.create, name='create'),
+
+    path('about/', views.about, name="about"),
+    path('org/', views.org, name="org"),
+    path('recruit/', views.recruit, name="recruit"),
 ]
