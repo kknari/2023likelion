@@ -7,18 +7,18 @@
 </head>
 
 {% block content%}
-<div class="body">
+<div>
     {% for post in posts %}
-        <div class="content">
+        <div>
             <!--질문-->
             <h3>{{ post.content }}</h3>
-            <h4 class="date">{{ post.date | date:"Y.m.d" }}</h4>
+            <h4>{{ post.date | date:"Y.m.d" }}</h4>
         </div>
         
         {% for comment in comments %}
             {% if post.pk == comment.post.pk %}
                 <!--질문 답변(댓글)-->
-                <p class="comment">{{ comment }}</p>
+                <p>{{ comment }}</p>
             {% endif %}
         {% endfor %}
     {% endfor %}
@@ -28,7 +28,7 @@
 <!--글 작성-->
 <form action="{% url 'create' %}" method="POST">
     {% csrf_token %}
-    <div class="textarea">
+    <div>
         <textarea name="content" id="content" cols="100" rows="5"></textarea>
     </div>
     <input type="submit" value="글 생성하기">

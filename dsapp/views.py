@@ -21,3 +21,12 @@ def create(request):
             post.date = timezone.now()
             post.save()                               
     return redirect('talk')
+
+def about(request):
+    return render(request, 'about.html')
+
+def org(request):
+    return render(request, 'org.html')
+
+def recruit(request):
+    return render(request, 'recruit.html')
