@@ -1,7 +1,87 @@
 {% extends 'base.html' %}
 <head> 
-  {% load static %}
-  {% block extrahead %}
-  <link rel="stylesheet" href="{% static './css/main.css' %}">
-  {% endblock %}
+    {% load static %}
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static './css/main.css' %}">
+    <link rel="stylesheet" href="{% static './css/recruit.css' %}">
+    <script src="https://kit.fontawesome.com/fc13d61e87.js" crossorigin="anonymous"></script>
+    {% endblock %}
+    {% block content%}
+    <body>
+    
+        <!--타이틀 -->
+        <h1 class="title">RECRUIT
+        </h1> 
+    
+        <!--모집-->
+        <div class="recruit">
+            <h2 class="recruit1" style="font-size: 35px;">2023년 아기사자 모집</h2>
+            
+            <p class="recruit2">2023년 덕성여자대학교 멋쟁이사자처럼에 참여하고 싶으시다면 지금 바로 지원하세요!</p>
+            
+            <p class="recruit3">지원 페이지 바로가기</p>
+        </div>
+        
+        <!--카드-->
+        <div class="container">
+            
+            <div class="card1">
+                <h1>모집 일정</h1>
+                <ul>
+                    <li>서류 모집 : 2023년 2월 20일 ~ 2023년 3월 3일</li>
+                    <li>서류 합격자 발표 : 2023년 3월 6일</li>
+                    <li>최종 면접 : 2023년 3월 8일 ~ 2023년 3월 11일</li>
+                    <li>최종 합격자 발표 : 2023년 3월 15일</li>
+                </ul>
+            </div>
+            
+            <div class="card2">
+                <h1>모집 대상</h1>
+                <ul>
+                    <li>23년도 기준 재학생 및 휴학생, 자대 편입생 (졸업자, 타대생 참여 불가)</li>
+                    <li>라인 환경이 원할한 분 (노트북 소지 필수)</li>
+                    <li>주 2회 스터디(월,금 19~22:00) 및 주 20시간 이상의 시간적 여유가 있는 분</li>
+                </ul>
+            </div>
+    
+            <div class="card3">
+                <h1>모집 분야</h1>
+                <ul>
+                    <li>Front-end</li>
+                    <li>Back-end</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--자주 묻는 질문-->
+        <div class="question_container">
+            <h1 class="question">자주 묻는 질문</h1>
+            
+            <div class="container2">
+                
+                <div class="qcard1" id="cardA">
+                    <p class="q">정기 교육, 스터디 등 전부 오프라인으로 진행되나요? 주 몇 회 모임인가요?<i class="fa-solid fa-plus" id="plus1"></i></p>
+                    <p class="a a1">2023년도 덕성여자대학교 멋쟁이사자처럼 정기 교육은 주 2회 진행될 예정이며, 모두 오프라인으로 진행될 예정입니다.</p>
+                </div>
+                <div class="qcard2"  id="cardA">
+                    <p class="q">정규 모임 시간에 무엇을 하는지,운영진분들이 하는 강의를 듣는건지 궁금합니다.<i class="fa-solid fa-plus" id="plus2"></i></p>
+                    <p class="a a2">정기 교육은 멋쟁이사자차럼에서 제공하는 VOD를 수강하고, 추각적으로 운영진들이 자체적으로 준비한 교육을 진행할 예정입니다.</p>
+                </div>
+                <div class="qcard3"  id="cardA">
+                    <p class="q">졸업생도 지원 가능한건가요?<i class="fa-solid fa-plus" id="plus3"></i></p>
+                    <p class="a a3">재학생/휴학생만 지원이 가능합니다.(졸업유예생, 수료생, 졸업예정자는 지원이 불가합니다.)</p>
+                </div>
+                <div class="qcard4"  id="cardA">
+                    <p class="q">프로그래밍은 처음인데 지원이 가능한가요?<i class="fa-solid fa-plus" id="plus4"></i></p>
+                    <p class="a a4">개발에 대한 열정과 뛰어난 아이디어를 가지고 계시다면 충분히 가능합니다! 하지만 정말 아무것도 모르시는 예비 아기사자분들께세는 진도를 따라가기 힘드실 수 있기 때문에 많은 공부와 시간이 필요합니다.</p>
+                </div>
+                <div class="qcard5"  id="cardA">
+                    <p class="q">1년 활동 가능자 대상인지, 한학기 활동 가능자 대상인지 궁금합니다.<i class="fa-solid fa-plus"id="plus5"></i></p>
+                    <p class="a a5">1년 활동 가능자 대상입니다.</p>
+                </div>
+            </div>
+        </div>
+        <script src={% static './js/recruit.js' %}></script>
+    </body>   
+    {% endblock %} 
 </head>

@@ -1,0 +1,329 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+/*타이틀부분*/
+
+.title{
+    flex-shrink: 0;
+    width: auto; /* 364px */
+    height: auto; /* 96px */
+    white-space: pre;
+    overflow: visible;
+    position: relative;
+    line-height: 1.2;
+    text-align: center;
+    margin:  0 auto;
+    font-size: 50px;
+    margin-top : 40px;
+    animation: fadeInUp 1s;
+}
+
+.recruit{
+    background-image: url("../img/logo.png");
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 1fr;
+    height: auto; /* 387px */
+    padding: 80px 0px 80px 0px;
+    overflow: hidden;
+    flex: 1 0 0px;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.recruit1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-shrink: 0;
+    width: 1fr;
+    height: auto; /* 51px */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: keep-all ;
+    overflow: visible;
+    flex: 1 0 0px;
+    position: relative;
+    color: #e7ebf2;
+    line-height: 1.2;
+    animation: fadeInUp2 1.3s ease ;
+}
+
+.recruit2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding : 25px;
+    flex-shrink: 0;
+    width: 1fr;
+    height: auto; /* 64px */
+    white-space: pre-wrap  ;
+    word-wrap: keep-all ;
+    word-break: keep-all ;
+    overflow: hidden;
+    flex: 1 0 0px;
+    position: relative;
+    color: #e7ebf2;
+    line-height: 1.2;
+    animation: fadeInUp2 1.6s ease ;
+}
+
+.recruit3{
+    box-sizing: border-box;
+    width: fit-content;
+    height: 2em;
+    padding : 2px 25px 2px 25px;
+    background-color: #e7ebf2;
+    overflow: visible;
+    align-content: center;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    margin:  0 auto;
+    position: relative;
+    border-radius: 100px;
+    border: 1px solid rgba(231, 235, 242, 0);
+    animation: fadeInUp2 2s ease ;
+}
+
+
+
+/* 카드 */
+
+.container{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px 10% 0 10%;
+}
+
+
+.card1{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 320px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0.796841278193901px 2.3905238345817033px -0.625px rgba(0, 0, 0, 0.05), 0px 2.413677098392273px 7.2410312951768185px -1.25px rgba(0, 0, 0, 0.05), 0px 6.3802836426702925px 19.140850928010877px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 22;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.card2{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 320px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0.796841278193901px 2.3905238345817033px -0.625px rgba(0, 0, 0, 0.05), 0px 2.413677098392273px 7.2410312951768185px -1.25px rgba(0, 0, 0, 0.05), 0px 6.3802836426702925px 19.140850928010877px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 22;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.card3{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 320px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0.796841278193901px 2.3905238345817033px -0.625px rgba(0, 0, 0, 0.05), 0px 2.413677098392273px 7.2410312951768185px -1.25px rgba(0, 0, 0, 0.05), 0px 6.3802836426702925px 19.140850928010877px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 22;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.container ul{
+    color: #666666;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+
+/*자주 묻는 질문*/
+
+.question_container{
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 90px;
+    word-break: keep-all ;
+}
+.question{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1fr;
+    height: auto; /* 40px */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: keep-all ;
+    overflow: hidden;
+    flex: 1 0 0px;
+
+    color: #000000;
+    line-height: 1.2;
+
+    margin: 0 auto;
+}
+
+.container2{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.qcard1,.qcard2,.qcard3,.qcard4,.qcard5{
+    box-sizing: content-box;
+    opacity: 0;
+    width: 60%;
+    height: min-content; /* 96px */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 16px 16px 16px;
+    background-color: rgba(232, 201, 210, 0.53);
+    overflow: visible;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0;
+    position:  relative;
+    border-radius:12px;    
+    margin-bottom: 20px;
+}
+
+.q{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.fa-plus{
+    box-sizing: border-box;
+    width: auto;
+    float:right;
+    text-align: end;
+    color: #988ACA;
+}
+
+.a{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #666666;
+    display: none;
+    word-break: keep-all ;
+    margin-top:10px;
+}
+
+/*자주 묻는 질문 애니메이션*/
+
+.colorChange{
+    background-color: #E8C9D2;
+}
+
+.plusRotate{
+    transform: rotate(130deg);
+    transition: 1s;
+}
+
+.showText{
+    display: block;
+}
+
+/*자주 묻는 질문 크기 수정*/
+
+@media screen and (max-width: 745px) {
+    
+    .qcard1,.qcard2,.qcard3,.qcard4,.qcard5{
+        box-sizing: content-box;
+        width: 70%;
+        height: min-content; /* 96px */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 16px 16px 16px 16px;
+        overflow: visible;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 0;
+        position:  relative;
+        border-radius:12px;    
+        margin-bottom: 20px;
+    }
+}
+
+
+/*글자 나타나는 애니메이션*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        scale: 0.8;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        scale:1 ;
+        transform: none;
+    }
+}
