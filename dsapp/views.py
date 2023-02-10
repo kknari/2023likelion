@@ -15,7 +15,9 @@ def create(request):
     if(request.method == 'POST'):                   
         post = Post()                              
         post.content = request.POST['content']
-        post.date = timezone.now()
-        post.save()                               
-
+        if post.content == "":
+            return redirect('talk')
+        else:  
+            post.date = timezone.now()
+            post.save()                               
     return redirect('talk')

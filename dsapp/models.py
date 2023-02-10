@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Post(models.Model):
-    content = models.TextField(max_length=200)
+    content = models.TextField(max_length=200, null=False)
     date = models.DateTimeField(auto_now_add=True) # 자동으로 현재 시간 추가
 
     def __str__(self):

@@ -1,14 +1,18 @@
-{% load static %}
-<head>
-    <link rel="stylesheet" href="{% static 'css/talk.css' %}">
+{% extends 'base.html' %}
+<head> 
+  {% load static %}
+  {% block extrahead %}
+  <link rel="stylesheet" href="{% static './css/main.css' %}">
+  {% endblock %}
 </head>
 
+{% block content%}
 <div class="body">
     {% for post in posts %}
         <div class="content">
             <!--질문-->
             <h3>{{ post.content }}</h3>
-            <h4>{{ post.date }}</h4>
+            <h4 class="date">{{ post.date | date:"Y.m.d" }}</h4>
         </div>
         
         {% for comment in comments %}
@@ -21,13 +25,12 @@
     
 </div>
 
-<!--댓글 작성-->
+<!--글 작성-->
 <form action="{% url 'create' %}" method="POST">
     {% csrf_token %}
-    <div>
-        <textarea name="content" id="content" cols="50" rows="10"></textarea>
+    <div class="textarea">
+        <textarea name="content" id="content" cols="100" rows="5"></textarea>
     </div>
     <input type="submit" value="글 생성하기">
 </form>
-    
-
+{% endblock %}
