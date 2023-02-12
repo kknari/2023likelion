@@ -307,16 +307,15 @@
     }
     .maintitle{
         width: auto;
-        height: 96px;
         color: #000000;
-        font-size: 56px;
+        font-size: 52px;
         font-weight: 595;
     }
 
     .section1{
         display: flex;
         width: 100%;
-        height: 978px;
+        height: 890px;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
@@ -372,7 +371,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px 156px 160px 156px;
+        padding: 0px 40px 80px 40px;
     }
     
     .innersection2{
@@ -386,13 +385,13 @@
     }
         
     .sctimg2{
-        width: 434px;
+        width: 47%;
         height: 317px;
         background-color: rgba(232, 201, 210, 0.58);
         border-radius: 20px;
     }
     .sctimg1, .sctimg3{
-        width: 434px;
+        width: 47%;
         height: 317px;
         background-color: rgba(232, 201, 210, 0.58);
         border-radius: 20px;
@@ -402,8 +401,8 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        gap: 64px;
-        justify-content: center;
+        gap: 40px;
+        justify-content: space-between;
         align-items: center;
     }  
 
@@ -416,11 +415,16 @@
         font-size: 40px;
         font-weight: bold;
         color: #80243F;
-        line-height: 1.4;
+        line-height: 1.5;
     }
     .box1detail, .box2detail, .box3detail{
-        font-size: 11px;
+        font-size: 13px;
         color: #858694;
+        line-height: 2;
+    }
+
+    .box1txt, .box2txt, .box3txt{
+        width: 50%;
     }
     /*섹션 2 끝*/
     
