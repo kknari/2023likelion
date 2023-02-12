@@ -4,3 +4,5 @@ $(document).mouseup(function (e){
         $(".nav_detailbox").remove("toggle");
     }
   });
+
+
