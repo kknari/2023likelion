@@ -71,9 +71,20 @@
           <div class="link">
             <img class="representativeImg" src={% static './img/about.png' %}/>
             <div class="representativeTitle1">
-              <div class="commit">1일 1커밋 대항전!</div>
-              <div class="commit_detail">누가누가 개발을 열심히 하고있을까요?</div>
+              <div class="commit">2023년 덕성 멋사 <span>11기 운영진</span></div>
+              <div class="commit_detail">2023년을 책임질 11기 운영진을 소개합니다!</div>
             </div>
+          </div>
+        </a>
+      </div>
+      <div class="LinkComponent2">
+        <a href="{% url 'home' %}">
+          <div class="link">
+            <div class="representativeTitle1">
+              <div class="commit">덕성 멋사 <span>활동 미리보기</span></div>
+              <div class="commit_detail">덕성여자대학교 멋쟁이사자처럼에서는 어떤 활동을 할까요?</div>
+            </div>
+            <img class="representativeImg" src={% static './img/about.png' %}/>
           </div>
         </a>
       </div>
@@ -82,25 +93,19 @@
           <div class="link">
             <img class="representativeImg" src={% static './img/about.png' %}/>
             <div class="representativeTitle1">
-              <div class="commit">멋대 아기사자들의 작품방</div>
-              <div class="commit_detail">다양한 주제로 의견을 나누는 멋대만의 커뮤니티</div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="LinkComponent2">
-        <a href="{% url 'home' %}">
-          <div class="link">
-            <img class="representativeImg" src={% static './img/about.png' %}/>
-            <div class="representativeTitle1">
-              <div class="commit">멋대 아기사자들의 작품방</div>
-              <div class="commit_detail">다양한 주제로 의견을 나누는 멋대만의 커뮤니티</div>
+              <div class="commit">덕성 멋사에게 <span>응원 메시지</span></div>
+              <div class="commit_detail">1년동안 열심히 달릴 덕성여자대학교 멋쟁이사처럼에게<br>응원 메시지를 보내보세요!</div>
             </div>
           </div>
         </a>
       </div>
     </div>
   </div>
-  
+  <script> 
+    $("span:contains('주문취소')").css({color:"red"});
+    $("span:contains('주문취소')").css({color:"red"});
+    $("span:contains('주문취소')").css({color:"red"});
+    </script>
+    
 </body>
 {% endblock %}
