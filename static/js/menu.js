@@ -22,21 +22,8 @@
      navi.classList.toggle(CLICKED_CLASS);
   }
   
-  document.querySelector('.btn-menu').addEventListener('click', function(){
+  document.querySelector('.btn-menu').addEventListener('click', 
+    function(){
     this.classList.toggle('active');
 });
 
-$(function(){ 
-
-    
-  // $(".modal").click(function(e){
-  //     if(!$(e.target).hasClass('modal_content')){
-  //         $(".modal").fadeOut();
-  //         console.log('레이어팝업 외의 영역입니다')
-  //     }
-  // });
-
-  
-  
-  
-});
