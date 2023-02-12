@@ -34,7 +34,7 @@
 </div>
 
 <!--글 작성-->
-<form action="{% url 'create' %}" method="POST" onsubmit="space_check();">
+<form action="{% url 'create' %}" method="POST" onsubmit="return space_check();">
     {% csrf_token %}
     <div class="write">
         <textarea  name="content" id="content" cols="100" rows="5" placeholder="적어주세요!"></textarea>

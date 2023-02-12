@@ -5,4 +5,7 @@ function space_check(){
         document.getElementById("content").focus();
         return false;
     }
+    else{
+        return true;
+    }
 }
