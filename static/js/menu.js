@@ -5,7 +5,7 @@
     //# sourceMappingURL=jquery.min.map
     
   var burger = $('.btn-menu');
-  const navi = document.querySelector('.nav_detailbox');
+  var navi = document.querySelector('.nav_detailbox');
   
   burger.each(function(index){
     var $this = $(this);
@@ -22,6 +22,7 @@
      navi.classList.toggle(CLICKED_CLASS);
   }
   
+
   document.querySelector('.btn-menu').addEventListener('click', 
     function(){
     this.classList.toggle('active');

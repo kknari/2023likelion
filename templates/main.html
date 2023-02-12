@@ -18,16 +18,20 @@
         </div>
         <div class="sec1textbox">
           <div class="textbox">2023 덕성여자대학교 멋쟁이사자처럼에서는 개발에 대한 열정과<br>빛나는 아이디어를 갖고 있는 11기 아기사자를 기다리고 있습니다.</div>
-          <a href="{% url 'home' %}"><div class="gobtn">지원하러가기</div></a>
+          <a href="{% url 'home' %}"><div class="gobtn">지원하러가기 ></div></a>
         </div>
       </div>
   </div>
   <div class="main_mobile">
     <div class="section1_mobile">
-      <div class="maintitle">"POSSIBILITY TO REALITY"</div>
-      <div class="maintitle_mobile">
-        <div class="poss">"POSSIBILITY </div>
-        <div class="to"> TO REALITY"</div>
+      <div class="maintitle_mobile">"POSSIBILITY <br>&nbsp;TO&nbsp;&nbsp;REALITY"</div>
+        <video class="video" loop autoplay muted poster={% static './img/videoposter.png' %}>
+          <source src={% static './img/sample.mp4' %} type="video/mp4">
+        </video>
+        <div class="sec1textbox_mobile">
+          <div class="textbox_moblie">2023 덕성여자대학교 멋쟁이사자처럼에서는 개발에 대한 열정과<br>빛나는 아이디어를 갖고 있는 11기 아기사자를 기다리고 있습니다.</div>
+          <a href="{% url 'home' %}"><div class="gobtn">지원하러가기 ></div></a>
+        </div>
       </div>
     </div>
   </div>
@@ -58,17 +62,50 @@
         </div>
       </div>
     </div>
-    <div class="section2_mobile">
-      <div class="sctbox1">
-
+  </div>
+  
+  <div class="section2_mobile">
+    <div class="MidSection">
+      <div class="LinkComponent1">
+        <a href="{% url 'home' %}">
+          <div class="link">
+            <img class="representativeImg" src={% static './img/about.png' %}/>
+            <div class="representativeTitle1">
+              <div class="commit">2023년 덕성 멋사 <span>11기 운영진</span></div>
+              <div class="commit_detail">2023년을 책임질 11기 운영진을 소개합니다!</div>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="sctbox2">
-
+      <div class="LinkComponent2">
+        <a href="{% url 'home' %}">
+          <div class="link">
+            <div class="representativeTitle1">
+              <div class="commit">덕성 멋사 <span>활동 미리보기</span></div>
+              <div class="commit_detail">덕성여자대학교 멋쟁이사자처럼에서는 어떤 활동을 할까요?</div>
+            </div>
+            <img class="representativeImg" src={% static './img/about.png' %}/>
+          </div>
+        </a>
       </div>
-      <div class="sctbox3">
-
+      <div class="LinkComponent2">
+        <a href="{% url 'home' %}">
+          <div class="link">
+            <img class="representativeImg" src={% static './img/about.png' %}/>
+            <div class="representativeTitle1">
+              <div class="commit">덕성 멋사에게 <span>응원 메시지</span></div>
+              <div class="commit_detail">1년동안 열심히 달릴 덕성여자대학교 멋쟁이사처럼에게<br>응원 메시지를 보내보세요!</div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
+  <script> 
+    $("span:contains('주문취소')").css({color:"red"});
+    $("span:contains('주문취소')").css({color:"red"});
+    $("span:contains('주문취소')").css({color:"red"});
+    </script>
+    
 </body>
 {% endblock %}
