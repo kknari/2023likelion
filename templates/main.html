@@ -24,10 +24,14 @@
   </div>
   <div class="main_mobile">
     <div class="section1_mobile">
-      <div class="maintitle">"POSSIBILITY TO REALITY"</div>
-      <div class="maintitle_mobile">
-        <div class="poss">"POSSIBILITY </div>
-        <div class="to"> TO REALITY"</div>
+      <div class="maintitle_mobile">"POSSIBILITY <br>&nbsp;TO&nbsp;&nbsp;REALITY"</div>
+        <video class="video" loop autoplay muted poster={% static './img/videoposter.png' %}>
+          <source src={% static './img/sample.mp4' %} type="video/mp4">
+        </video>
+        <div class="sec1textbox_mobile">
+          <div class="textbox_moblie">2023 덕성여자대학교 멋쟁이사자처럼에서는 개발에 대한 열정과<br>빛나는 아이디어를 갖고 있는 11기 아기사자를 기다리고 있습니다.</div>
+          <a href="{% url 'home' %}"><div class="gobtn">지원하러가기 ></div></a>
+        </div>
       </div>
     </div>
   </div>
@@ -58,17 +62,45 @@
         </div>
       </div>
     </div>
-    <div class="section2_mobile">
-      <div class="sctbox1">
-
+  </div>
+  
+  <div class="section2_mobile">
+    <div class="MidSection">
+      <div class="LinkComponent1">
+        <a href="{% url 'home' %}">
+          <div class="link">
+            <img class="representativeImg" src={% static './img/about.png' %}/>
+            <div class="representativeTitle1">
+              <div class="commit">1일 1커밋 대항전!</div>
+              <div class="commit_detail">누가누가 개발을 열심히 하고있을까요?</div>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="sctbox2">
-
+      <div class="LinkComponent2">
+        <a href="{% url 'home' %}">
+          <div class="link">
+            <img class="representativeImg" src={% static './img/about.png' %}/>
+            <div class="representativeTitle1">
+              <div class="commit">멋대 아기사자들의 작품방</div>
+              <div class="commit_detail">다양한 주제로 의견을 나누는 멋대만의 커뮤니티</div>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="sctbox3">
-
+      <div class="LinkComponent2">
+        <a href="{% url 'home' %}">
+          <div class="link">
+            <img class="representativeImg" src={% static './img/about.png' %}/>
+            <div class="representativeTitle1">
+              <div class="commit">멋대 아기사자들의 작품방</div>
+              <div class="commit_detail">다양한 주제로 의견을 나누는 멋대만의 커뮤니티</div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
+  
 </body>
 {% endblock %}
