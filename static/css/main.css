@@ -116,6 +116,10 @@
         display: none;
     }
 
+    .section2_tab{
+        display: none;
+    }
+
     .innersection2{
         display: flex;
         flex-direction: column;
@@ -250,6 +254,10 @@
     }
 
     .section2_mobile{
+        display: none;
+    }
+
+    .section2_tab{
         display: none;
     }
 
@@ -389,7 +397,7 @@
     }
 
     /*섹션 2*/
-    .section2{
+    /* .section2{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -398,60 +406,89 @@
 
     .section2_mobile{
         display: none;
+    } */
+
+    .section2{
+        display: none;
     }
-    
-    .innersection2{
+    .section2_tab{
         display: flex;
+    }
+    .section2_mobile{
+        display: none;
+    }
+    .MidSection{
+        padding-bottom: 1px;
+        padding-top:1px;
+        margin-left:34px;
+        margin-right:34px;
+        display:flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0px 24px 0px 24px;
-        height: 1354px;
-        justify-content: space-evenly;
-    }
-        
-    .sctimg2{
-        width: 37vh;
-        height: 22vh;
-        background-color: rgba(232, 201, 210, 0.58);
-        border-radius: 20px;
-    }
-    .sctimg1, .sctimg3{
-        width: 37vh;
-        height: 22vh;
-        background-color: rgba(232, 201, 210, 0.58);
-        border-radius: 20px;
-    }
+        align-items:center
+      }
+      .link{
+        text-decoration: none;
+        border-radius: 5px;
+        flex-direction: row !important;
+        box-shadow: 0px !important;
+        justify-content: space-evenly !important;
+      }
+      .LinkComponent1{
+        /* width:344px; */
+        width:100%;
+        /* height:323px; */
+        /* margin-left:34px; */
+        /* margin-right:34px; */
+        margin-bottom:30px;
+        background-color: white !important;
+        border-radius:5px;
+      }
+      .LinkComponent2{
+        /* width:344px; */
+        width:100%;
+        /* height:323px; */
+        /* margin-left:34px; */
+        /* margin-right:34px; */
+        margin-bottom:60px;
+        background-color: white !important;
+        border-radius:5px;
+      }
+    
+      .representativeImg{
+        width: 50% !important;
+        border-radius:5px;
+      }
+      .representativeTitle1{
+        font-size:16px;
+        color:#848484;
+        display:flex;
+        flex-direction: column;
+        margin-top:14.86px;
+        margin-left:15px;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .commit_detail{
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      .commit{
+        font-size:20px;
+        color:#0E1013;
+        margin-top:1px;
+        font-weight: 700;
+      }
 
-    .sctbox1,.sctbox2, .sctbox3{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 40px;
-        justify-content: space-between;
-        align-items: center;
-    }  
+      .commit > span{
+        font-size:20px;
+        color:#80243F;
+        margin-top:1px;
+        font-weight: 700;
+      }
 
-    .box3title, .box2title, .box1title{
-        font-size: 40px;
-        font-weight: bold;
-        line-height: 0.8;
-    }
-    .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
-        font-size: 40px;
-        font-weight: bold;
-        color: #80243F;
-        line-height: 1.5;
-    }
-    .box1detail, .box2detail, .box3detail{
-        font-size: 13px;
-        color: #858694;
-        line-height: 2;
-    }
-
-    .box1txt, .box2txt, .box3txt{
-        width: 56%;
-    }
+      .outsection{
+        padding-top: 60px;
+      }
     /*섹션 2 끝*/
     
 }
@@ -520,7 +557,9 @@
     .section2{
         display: none;
     }
-
+    .section2_tab{
+        display: none;
+    }
     .section2_mobile{
         display: flex;
     }
@@ -660,7 +699,9 @@
     .section2{
         display: none;
     }
-
+    .section2_tab{
+        display: none;
+    }
     .section2_mobile{
         display: flex;
     }
@@ -800,7 +841,9 @@
     .section2{
         display: none;
     }
-
+    .section2_tab{
+        display: none;
+    }
     .section2_mobile{
         display: flex;
     }
@@ -949,7 +992,9 @@
     .section2{
         display: none;
     }
-
+    .section2_tab{
+        display: none;
+    }
     .section2_mobile{
         display: flex;
     }
