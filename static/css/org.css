@@ -1,0 +1,213 @@
+.hidden{
+    overflow:hidden;
+}
+h1{
+    text-align: center;
+    animation: fadeInUp 1.5s;
+    animation-timing-function: ease;
+}
+@keyframes fadeInUp {
+    0% {
+        font-size: 60px;
+        transform: translate3d(0, 80%, 0);
+    }
+    to {
+        transform: translateZ(0);
+    }
+}
+.orgContent{
+    padding: 100px 0 67px 0;
+}
+.presidency{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+.mobileCard{
+    display: none;
+}
+.member{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 220px;
+}
+.card{
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0px 0.796841278193901px 2.3905238345817033px -0.625px rgba(0, 0, 0, 0.05), 0px 2.413677098392273px 7.2410312951768185px -1.25px rgba(0, 0, 0, 0.05), 0px 6.3802836426702925px 19.140850928010877px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.cardImg{
+    width: 100%;
+    height: 240px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.cardContent{
+    box-sizing: border-box;
+    height: 120px; /* 134px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 30px 30px 30px;
+}
+
+
+/* 화면 크기별 크기 조정 */
+@media screen and (max-width: 1439px) {
+    .member{
+        padding: 20px 40px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .member .card{
+        width: 280px;
+    }
+    @keyframes fadeInUp {
+        0% {
+            font-size: 50px;
+            transform: translate3d(0, 80%, 0);
+        }
+        to {
+            transform: translateZ(0);
+        }
+    }
+}
+@media screen and (max-width: 960px) {
+    .member .card{
+        width: 260px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .member .card{
+        width: 240px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .member .card{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .orgContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height:460px;
+        padding: 0 100px;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+    .orgContent::-webkit-scrollbar{
+        display: none;
+    }
+    .card{
+        width: 400px;
+        height: 420px;
+    }
+    .cardContent{
+        box-sizing: border-box;
+        height: 80px; /* 134px */
+        display: bolck;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px;
+    }
+    .presidency{
+        flex-wrap: nowrap;
+    }
+    .mobileCard{
+        display: flex;
+        gap: 20px;
+    }
+    .member{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    @keyframes fadeInUp {
+        0% {
+            font-size: 40px;
+            transform: translate3d(0, 80%, 0);
+        }
+        to {
+            transform: translateZ(0);
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .orgContent{
+        height:460px;
+        padding: 0 80px;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+    @keyframes fadeInUp {
+        0% {
+            font-size: 30px;
+            transform: translate3d(0, 80%, 0);
+        }
+        to {
+            transform: translateZ(0);
+        }
+    }
+}
+@media screen and (max-width: 565px) {
+    .orgContent{
+        height:460px;
+        padding: 0 60px;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+}
+@media screen and (max-width: 530px) {
+    .orgContent{
+        height:460px;
+        padding: 0 35px;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+}
+@media screen and (max-width: 500px) {
+    .orgContent{
+        height:460px;
+        padding: 0 50px;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+    .card{
+        width: 320px;
+        height: 360px;
+    }
+    .maintitle{
+        width: auto;
+        height: 96px;
+        color: #000000;
+        font-size: 48px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .orgContent{
+        height:460px;
+        padding: 0 20px;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+    .card{
+        width: 320px;
+        height: 360px;
+    }
+}
