@@ -3,5 +3,160 @@
   {% load static %}
   {% block extrahead %}
   <link rel="stylesheet" href="{% static './css/main.css' %}">
+  <link rel="stylesheet" href="{% static './css/about.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="{% static './css/swiper-bundle.min.css' %}" />
   {% endblock %}
 </head>
+
+{% block content%}
+<body>
+  <div class="about">
+        <h1 class="about-title">ABOUT</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="hackathon-img" src={% static './img/hackathon.png' %}/>
+            </div>
+
+              <div class="swiper-slide">
+                <img class="herethon-img" src={% static './img/herethon.png' %}/>
+              </div>
+              <div class="swiper-slide">
+                <img class="ideathon-img" src={% static './img/ideathon.png' %}/>
+              </div>
+              <div class="swiper-slide">
+                <img class="mt-img" src={% static './img/mt.png' %}/>
+              </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="likelion-info">
+          <div class="info-text-wrap">
+            <p class="info-title">멋쟁이사자처럼 대학이란?</p>
+            <p class="info-content">멋쟁이사자처럼 대학은 테크 기반의 아이디어 실현을 위한 국내 61개 대학이 참여하는 전국 최대 프로그래밍 연합 동아리입니다.(2023년 기준)
+              덕성여자대학교 멋쟁이사자처럼은 현재 11기 아기 사자를 모집 중입니다.</p>
+          </div>
+        </div>
+        <h1 class="track-title">교육 트랙 소개</h1>
+        <!-- 교육 트랙 소개 -->
+        <div class="track-content">
+          <!-- 프론트 트랙 설명 박스 -->
+          <div class="box-front-track">
+            <!-- 태블릿 반응형에서 왼쪽 부분  -->
+            <div class="box-front-left">
+              <h2 class="front-title">Front-end</h2>
+              <div class="front-class-info">사용자가 웹 사이트를 보고 상호작용할 수 있도록 웹의 그래픽 사용자 인터페이스(GUI)를 개발</div>
+            </div>
+
+            <!-- 태블릿 반응형에서 오른쪽 부분  -->
+            <!-- Check Light -->
+            <div class="box-front-right">
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#000218"></path>
+                </svg>
+                <p class="check-content">HTML / CSS / JavaScript</p>
+              </div>
+
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#000218"></path>
+                </svg>
+                <p class="check-content">React</p>
+              </div>
+
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#000218"></path>
+                </svg>
+                <p class="check-content">Django (기초)</p>
+              </div>
+
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#000218"></path>
+                </svg>
+                <p class="check-content">Git / Github</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 백엔드 트랙 설명 박스 -->
+          <div class="box-back-track">
+            <!-- 태블릿 반응형에서 왼쪽 부분  -->
+            <div class="box-back-left">
+              <h2 class="back-title">Back-end</h2>
+              <div class="back-class-info">웹의 사용자가 보지 못하는 영역인 서버나 데이터베이스를 개발 및 관리</div>
+            </div>
+            
+            <!-- 태블릿 반응형에서 오른쪽 부분  -->
+            <div class="box-front-right">
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#E7EBF2"></path>
+                </svg>
+                <p class="check-content">Python</p>
+              </div>
+
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#E7EBF2"></path>
+                </svg>
+                <p class="check-content">Django (심화)</p>
+              </div>
+
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#E7EBF2"></path>
+                </svg>
+                <p class="check-content">Java + Springboot (기초)</p>
+              </div>
+
+              <div class="check-wrap">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM8.5767 14L15 7.64397L13.5398 6L8.5767 10.9111L6.46018 8.81679L5 10.4608L8.5767 14Z" fill="#E7EBF2"></path>
+                </svg>
+                <p class="check-content">Git / Github</p>
+              </div>
+
+            </div>  
+          </div>
+        </div>
+  </div>
+  <script src={% static './js/about.js' %}></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var ww = $(window).width();
+    var mySwiper = undefined;
+
+    function initSwiper() {
+      if (ww < 768 && mySwiper == undefined) {
+        mySwiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      } else if (ww >= 768 && mySwiper != undefined) {
+        mySwiper.destroy();
+        mySwiper = undefined;
+      }
+    }
+
+    initSwiper();
+
+    $(window).on('resize', function () {
+      ww = $(window).width();
+      initSwiper();
+    });
+  </script>
+</body>
+{% endblock %}

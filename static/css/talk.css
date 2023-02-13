@@ -1,0 +1,202 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.title{
+    flex-shrink: 0;
+    width: auto; /* 364px */
+    height: auto; /* 96px */
+    white-space: pre;
+    overflow: visible;
+    position: relative;
+    line-height: 1.2;
+    text-align: center;
+    margin:  0 auto;
+    font-size: 50px;
+    margin-top : 40px;
+    animation: fadeInUp 1s;
+}
+
+/*글자 나타나는 애니메이션*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.talk {
+    width:fit-content;
+    height: auto; /* 72px */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    color:#858694;
+    line-height: 1.2;
+    text-align: center;
+    margin:  0 auto;
+    animation: fadeInUp 1.3s ease ;
+}
+
+.comement{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 100px;
+    flex-direction: column; 
+    
+}
+
+.que{
+    display: flex;
+    margin-left: auto;
+    width:fit-content;
+    height: 30px ;
+    padding:20px 20px 20px 20px;
+    background-color: #e8cad2;
+    border-radius:  20px 3px 20px 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-style: normal;
+
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 1.5;
+}
+
+.ans{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 30px ;
+    padding:20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 3px 20px  20px 20px;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 1.5;
+}
+
+
+.write{
+    width: fit-content;
+    height: fit-content;
+    margin:  0 auto;
+    margin-top: 100px;
+}
+
+.write textarea{
+    width: 450px;
+    border-radius:  10px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding : 15px;
+    border: none;
+    resize: none;
+}
+
+.cBtn{
+    width: 450px;
+    border-radius:  10px;
+    background-color:black;
+    padding : 15px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+.cBtn input{
+    width: auto;
+    display: flex;
+    background:none;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:550px){
+    
+    .write textarea{
+        width: 350px;
+        border-radius:  10px;
+        background-color: rgba(0, 0, 0, 0.03);
+        padding : 15px;
+        border: none;
+        resize: none;
+    }
+    
+    .cBtn{
+        width: 350px;
+        border-radius:  10px;
+        background-color:black;
+        padding : 15px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+
+    }
+
+    .que{
+        display: flex;
+        margin-left: auto;
+        width:150px;
+        height: fit-content ;
+        padding:20px 20px 20px 20px;
+        background-color: #e8cad2;
+        border-radius:  20px 3px 20px 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-style: normal;
+    
+        color: #000000;
+        font-size: 13px;
+        letter-spacing: 0px;
+        line-height: 1.5;
+        white-space:normal;
+        word-break:break-all
+    }
+    
+    .ans{
+        display: flex;
+        justify-content: flex-start;
+        width: 150px;
+        height: fit-content ;
+        padding:20px 20px 20px 20px;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-radius: 3px 20px  20px 20px;
+        margin-bottom: 20px;
+    
+        font-weight: 500;
+        font-style: normal;
+        color: #000000;
+        font-size: 13px;
+        letter-spacing: 0px;
+        line-height: 1.5;
+    }
+
+    .comement{
+        width: 300px;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 100px;
+        flex-direction: column; 
+    }
+      
+}
+
+.cBtn > input{
+    border: none;
+    width: 100%;
+}

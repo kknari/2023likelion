@@ -1,36 +1,47 @@
 {% extends 'base.html' %}
 <head> 
-  {% load static %}
-  {% block extrahead %}
-  <link rel="stylesheet" href="{% static './css/main.css' %}">
-  {% endblock %}
+    {% load static %}
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static './css/main.css' %}">
+    <link rel="stylesheet" href="{% static './css/talk.css' %}">
+{% endblock %}
 </head>
 
 {% block content%}
 <div>
+
+    <!--타이틀 -->
+    <h1 class="title">TALK
+    </h1>
+
+    <p class="talk">덕성여자대학교 멋쟁이사자처럼을 위해 응원의 한마디를 남겨보세요!</p>
+
+    <div class="comement">
     {% for post in posts %}
-        <div>
+        <div class="que">
             <!--질문-->
             <h3>{{ post.content }}</h3>
-            <h4>{{ post.date | date:"Y.m.d" }}</h4>
         </div>
         
         {% for comment in comments %}
             {% if post.pk == comment.post.pk %}
                 <!--질문 답변(댓글)-->
-                <p>{{ comment }}</p>
+                <p class="ans">{{ comment }}</p>
             {% endif %}
         {% endfor %}
     {% endfor %}
-    
+    </div>
 </div>
 
 <!--글 작성-->
-<form action="{% url 'create' %}" method="POST">
+<form action="{% url 'create' %}" method="POST" onsubmit="return space_check();">
     {% csrf_token %}
-    <div>
-        <textarea name="content" id="content" cols="100" rows="5"></textarea>
+    <div class="write">
+        <textarea  name="content" id="content" cols="100" rows="5" placeholder="적어주세요!"></textarea>
     </div>
-    <input type="submit" value="글 생성하기">
+    <div  class="cBtn">
+        <input type="submit" value="글 생성하기">
+    </div>
 </form>
+<script src="/static/js/blank_check.js"></script>
 {% endblock %}
