@@ -133,14 +133,26 @@
     .sctimg2{
         width: 508px;
         height: 361px;
-        background-color: rgba(232, 201, 210, 0.58);
         border-radius: 20px;
+        background-image: url("../img/about.jpg");
+        object-fit: cover;
+        background-size: cover;
     }
     .sctimg1, .sctimg3{
         width: 508px;
         height: 361px;
-        background-color: rgba(232, 201, 210, 0.58);
         border-radius: 20px;
+        background-image: url("../img/org.jpg");
+        object-fit: cover;
+        background-size: cover;
+    }
+    .sctimg3{
+        width: 508px;
+        height: 361px;
+        border-radius: 20px;
+        background-image: url("../img/talk.jpg");
+        object-fit: cover;
+        background-size: cover;
     }
 
     .sctbox1,.sctbox2, .sctbox3{
@@ -274,14 +286,27 @@
     .sctimg2{
         width: 434px;
         height: 317px;
-        background-color: rgba(232, 201, 210, 0.58);
         border-radius: 20px;
+        background-image: url("../img/about.jpg");
+        object-fit: cover;
+        background-size: cover;
     }
-    .sctimg1, .sctimg3{
+    .sctimg1{
         width: 434px;
         height: 317px;
-        background-color: rgba(232, 201, 210, 0.58);
         border-radius: 20px;
+        background-image: url("../img/org.jpg");
+        object-fit: cover;
+        background-size: cover;
+    }
+
+    .sctimg3{
+        width: 434px;
+        height: 317px;
+        border-radius: 20px;
+        background-image: url("../img/talk.jpg");
+        object-fit: cover;
+        background-size: cover;
     }
 
     .sctbox1,.sctbox2, .sctbox3{
@@ -290,7 +315,8 @@
         width: 932px;
         justify-content: space-between;
         align-items: center;
-    }  
+    } 
+     
 
     .box3title, .box2title, .box1title{
         font-size: 38px;
