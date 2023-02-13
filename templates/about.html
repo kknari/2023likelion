@@ -136,7 +136,7 @@
     var mySwiper = undefined;
 
     function initSwiper() {
-      if (ww < 768 && mySwiper == undefined) {
+      if (ww < 762 && mySwiper == undefined) {
         mySwiper = new Swiper(".mySwiper", {
           slidesPerView: "auto",
           spaceBetween: 30,
@@ -145,7 +145,7 @@
             clickable: true,
           },
         });
-      } else if (ww >= 768 && mySwiper != undefined) {
+      } else if (ww >= 762 && mySwiper != undefined) {
         mySwiper.destroy();
         mySwiper = undefined;
       }
