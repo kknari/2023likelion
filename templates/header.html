@@ -34,20 +34,21 @@
               </a>
             </div>
         </div>
-        <!-- <script src="/static/js/nav_activate.js"></script> -->
     </div>
-    <div class="navbar_mobile" >
-      <a href="{% url 'home' %}"> <img class="navlogo_mobile" src={% static './img/navlogo.png' %}/></a>
-      <a href="javascript:;" id = "nav_btn" class="btn-menu" onclick="Openmenu()"></a>
-      <div  class="nav_detailbox" >
-        <div class="innerdtail">
-          <ul>
-              <li><a href="{% url 'home' %}">HOME</a></li>
-              <li><a href="{% url 'about' %}">ABOUT</a></li>
-              <li><a href="{% url 'org' %}">ORG</a></li>
-              <li><a href="{% url 'recruit' %}">RECRUIT</a></li>
-              <li><a href="{% url 'talk' %}">TALK</a></li>
-          </ul>
+    <div class="navbar_wrap">
+      <div class="navbar_mobile" >
+        <a href="{% url 'home' %}"> <img class="navlogo_mobile" src={% static './img/navlogo.png' %}/></a>
+        <a href="javascript:;" id = "nav_btn" class="btn-menu" onclick="Openmenu()"></a>
+        <div  class="nav_detailbox" >
+          <div class="innerdtail">
+            <ul>
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+                <li><a href="{% url 'org' %}">ORG</a></li>
+                <li><a href="{% url 'recruit' %}">RECRUIT</a></li>
+                <li><a href="{% url 'talk' %}">TALK</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
