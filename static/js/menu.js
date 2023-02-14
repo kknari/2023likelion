@@ -41,7 +41,6 @@ $('html').on("touchstart", function (e) {
 
       if($(e.target).parents('.navbar_wrap').length < 1){
 
-        console.log('팝업 외 부분이 맞습니다');
         navi.classList.toggle(CLICKED_CLASS);
         btn.classList.toggle('active');
       }
