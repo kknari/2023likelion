@@ -28,7 +28,7 @@ document.querySelector('.btn-menu').addEventListener('click',
 const CLICKED_CLASS = "toggle";
   
 function Openmenu(){
-    avi.classList.toggle(CLICKED_CLASS);
+    navi.classList.toggle(CLICKED_CLASS);
 }
 /*끝*/
 
