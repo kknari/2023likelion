@@ -5,8 +5,10 @@
     //# sourceMappingURL=jquery.min.map
     
   var burger = $('.btn-menu');
+  var btn = document.querySelector('.btn-menu');
   var navi = document.querySelector('.nav_detailbox');
   
+  /* 햄버거 메뉴 클릭시 트랜지션 움직임에 대한 코드*/
   burger.each(function(index){
     var $this = $(this);
     
@@ -15,16 +17,35 @@
       $(this).toggleClass('active-' + (index+1));
     })
   });
-  
-  const CLICKED_CLASS = "toggle";
-  
-  function Openmenu(){
-     navi.classList.toggle(CLICKED_CLASS);
-  }
-  
 
-  document.querySelector('.btn-menu').addEventListener('click', 
-    function(){
-    this.classList.toggle('active');
+document.querySelector('.btn-menu').addEventListener('click', 
+  function(){
+  this.classList.toggle('active');
 });
+/*움직임 끝*/
+  
+/*클릭 이벤트에 따른 메뉴 열고 닫기 함수*/
+const CLICKED_CLASS = "toggle";
+  
+function Openmenu(){
+    avi.classList.toggle(CLICKED_CLASS);
+}
+/*끝*/
 
+
+/*메뉴 열려있을때 메뉴 밖의 영역을 클릭하거나 페이지를 아래로 내리는 경우 메뉴 자동 닫기*/
+$('html').on("touchstart", function (e) {
+	
+
+    if($("#nav_btn").hasClass("active")){
+
+      if($(e.target).parents('.navbar_wrap').length < 1){
+
+        console.log('팝업 외 부분이 맞습니다');
+        navi.classList.toggle(CLICKED_CLASS);
+        btn.classList.toggle('active');
+      }
+      
+    }
+});
+/* 메뉴 자동 닫기 끝*/
