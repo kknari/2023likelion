@@ -3,6 +3,8 @@
   {% load static %}
   {% block extrahead %}
   <link rel="stylesheet" href={% static './css/main.css' %}>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
   {% endblock %}
 </head>
 
@@ -77,30 +79,33 @@
           <div class="link">
             <img class="representativeImg" src={% static './img/org.jpg' %}/>
             <div class="representativeTitle1">
-              <div class="commit">2023년 덕성 멋사 <span>11기 운영진</span></div>
-              <div class="commit_detail">2023년을 책임질 11기 운영진을 소개합니다!</div>
+              <div class="commit">2023년 덕성 멋사</div>
+              <div class="commit_r">11기 운영진</div>
+              <div class="commit_detail">2023년을 책임질 덕성여자대학교 멋쟁이사자처럼 11기 운영진을 소개합니다!</div>
             </div>
           </div>
         </a>
       </div>
-      <div class="LinkComponent2">
+      <div class="LinkComponent1">
         <a href="{% url 'about' %}">
           <div class="link">
             <div class="representativeTitle1">
-              <div class="commit">덕성 멋사 <span>활동 미리보기</span></div>
+              <div class="commit">덕성 멋사</div>
+              <div class="commit_r">활동 미리보기</div>
               <div class="commit_detail">덕성여자대학교 멋쟁이사자처럼에서는 어떤 활동을 할까요?</div>
             </div>
             <img class="representativeImg" src={% static './img/about.jpg' %}/>
           </div>
         </a>
       </div>
-      <div class="LinkComponent2">
+      <div class="LinkComponent1">
         <a href="{% url 'talk' %}">
           <div class="link">
             <img class="representativeImg" src={% static './img/talk.jpg' %}/>
             <div class="representativeTitle1">
-              <div class="commit">덕성 멋사에게 <span>응원 메시지</span></div>
-              <div class="commit_detail">1년동안 열심히 달릴 덕성여자대학교 멋쟁이사처럼에게<br>응원 메시지를 보내보세요!</div>
+              <div class="commit">덕성 멋사에게</div>
+              <div class="commit_r">응원 메시지</div>
+              <div class="commit_detail">1년동안 열심히 달릴 덕성여자대학교 멋쟁이사처럼에게 응원 메시지를 보내보세요!</div>
             </div>
           </div>
         </a>
@@ -111,19 +116,19 @@
 
   <div class="section2_mobile">
     <div class="MidSection">
-      <div class="LinkComponent1">
-        <a href="{% url 'home' %}">
+      <div class="LinkComponent1" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+        <a href="{% url 'org' %}">
           <div class="link">
-            <img class="representativeImg" src={% static './img/org.jpg' %}/>
             <div class="representativeTitle1">
               <div class="commit">2023년 덕성 멋사 <span>11기 운영진</span></div>
               <div class="commit_detail">2023년을 책임질 11기 운영진을 소개합니다!</div>
             </div>
+            <img class="representativeImg" src={% static './img/org.jpg' %}/>
           </div>
         </a>
       </div>
-      <div class="LinkComponent2">
-        <a href="{% url 'home' %}">
+      <div class="LinkComponent1" data-aos="fade-up" data-aos-duration="1000">
+        <a href="{% url 'about' %}">
           <div class="link">
             <div class="representativeTitle1">
               <div class="commit">덕성 멋사 <span>활동 미리보기</span></div>
@@ -133,19 +138,21 @@
           </div>
         </a>
       </div>
-      <div class="LinkComponent2">
-        <a href="{% url 'home' %}">
+      <div class="LinkComponent1" data-aos="fade-up" data-aos-duration="1000">
+        <a href="{% url 'talk' %}">
           <div class="link">
-            <img class="representativeImg" src={% static './img/talk.jpg' %}/>
             <div class="representativeTitle1">
               <div class="commit">덕성 멋사에게 <span>응원 메시지</span></div>
-              <div class="commit_detail">1년동안 열심히 달릴 덕성여자대학교 멋쟁이사처럼에게<br>응원 메시지를 보내보세요!</div>
+              <div class="commit_detail">1년동안 열심히 달릴 덕성여자대학교 멋쟁이사처럼에게 응원 메시지를 보내보세요!</div>
             </div>
+            <img class="representativeImg" src={% static './img/talk.jpg' %}/>
           </div>
         </a>
       </div>
     </div>
   </div>
-    
+  <script> 
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+  </script>
 </body>
 {% endblock %}
