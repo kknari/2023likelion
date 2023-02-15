@@ -43,5 +43,22 @@
         <input type="submit" value="글 생성하기">
     </div>
 </form>
+
+<div class="page">
+<!--페이지네이션-->
+{% if posts.has_previous %}
+    <a href="?page=1">첫 페이지</a>
+    <a href="?page={{ posts.previous_page_number }}">pre</a>
+{% endif %}
+<span>{{ posts.number }}</span>
+<span>/</span>
+<span>{{ posts.paginator.num_pages }}</span>
+
+{% if posts.has_next %}
+<a href="?page={{ posts.next_page_number }}">next</a>
+<a href="?page={{ posts.paginator.num_pages }}">마지막 페이지</a>
+{% endif %}
+</div>
 <script src="/static/js/blank_check.js"></script>
 {% endblock %}
+
