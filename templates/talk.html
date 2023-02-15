@@ -27,7 +27,7 @@
         {% for comment in comments %}
             {% if post.pk == comment.post.pk %}
                 <!--질문 답변(댓글)-->
-                <p class="ans">{{ comment | linebreaksbr}}</p>
+                <p class="ans">{{ comment.comment | linebreaksbr}}</p>
             {% endif %}
         {% endfor %}
     {% endfor %}
