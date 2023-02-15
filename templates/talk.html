@@ -50,8 +50,8 @@
 <!--페이지네이션-->
 {% if posts.has_previous %}
 
-    <a href="?page=1">처음</a>
-    <a href="?page={{ posts.previous_page_number }}">&#10094;</a>
+    <a style="margin-right :5px" href="?page=1">처음</a>
+    <a style="margin-right :5px" href="?page={{ posts.previous_page_number }}">&#10094;</a>
 
 {% endif %}
 
@@ -59,17 +59,22 @@
 {% for p in posts.paginator.page_range %}
     {% if posts.number == p %} <!-- 현재 있는 페이지가 num과 같다면-->
         <strong><a 
-            style="background:red;border-radius:50%" href="?page={{ p }}">{{ p }}</a></strong>
+            style="margin-right :5px;
+            background-color:#e8cad2;
+            padding:0 6px 0 6px;
+            border-radius:50%;
+            color:#000;
+            " href="?page={{ p }}">{{ p }}</a></strong>
     {% else %}
-        <a href="?page={{ p }}">{{ p }}</a> <!-- 나머지 페이지들은 그냥 출력-->
+        <a style="margin-right :5px;padding:0 6px 0 6px;" href="?page={{ p }}">{{ p }}</a> <!-- 나머지 페이지들은 그냥 출력-->
     {% endif %}
 {% endfor %}
 
 
 {% if posts.has_next %}
 
-<a href="?page={{ posts.next_page_number }}">&#10095;</a>
-<a href="?page={{ posts.paginator.num_pages }}">끝</a>
+<a style="margin-right :5px;" href="?page={{ posts.next_page_number }}">&#10095;</a>
+<a style="margin-right :5px" href="?page={{ posts.paginator.num_pages }}">끝</a>
 
 
 {% endif %}
