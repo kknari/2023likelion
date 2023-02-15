@@ -15,6 +15,7 @@
     </h1>
 
     <p class="talk">덕성여자대학교 멋쟁이사자처럼을 위해 응원의 한마디를 남겨보세요!</p>
+    
 
     <div class="comement">
     {% for post in posts %}
@@ -47,16 +48,28 @@
 <div class="page">
 <!--페이지네이션-->
 {% if posts.has_previous %}
-    <a href="?page=1">첫 페이지</a>
-    <a href="?page={{ posts.previous_page_number }}">pre</a>
+
+    <a href="?page=1">처음</a>
+    <a href="?page={{ posts.previous_page_number }}">&#10094;</a>
+
 {% endif %}
-<span>{{ posts.number }}</span>
-<span>/</span>
-<span>{{ posts.paginator.num_pages }}</span>
+
+
+{% for p in posts.paginator.page_range %}
+    {% if posts.number == p %} <!-- 현재 있는 페이지가 num과 같다면-->
+        <strong><a href="?page={{ p }}">{{ p }}</a></strong>
+    {% else %}
+        <a href="?page={{ p }}">{{ p }}</a> <!-- 나머지 페이지들은 그냥 출력-->
+    {% endif %}
+{% endfor %}
+
 
 {% if posts.has_next %}
-<a href="?page={{ posts.next_page_number }}">next</a>
-<a href="?page={{ posts.paginator.num_pages }}">마지막 페이지</a>
+
+<a href="?page={{ posts.next_page_number }}">&#10095;</a>
+<a href="?page={{ posts.paginator.num_pages }}">끝</a>
+
+
 {% endif %}
 </div>
 <script src="/static/js/blank_check.js"></script>

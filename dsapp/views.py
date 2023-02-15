@@ -11,8 +11,8 @@ def talk(request):
     posts = Post.objects.filter().order_by('-date')
     comments = Comment.objects.filter().order_by('-date')
     paginator = Paginator(posts, 3)
-    pagnum = request.GET.get('page')
-    posts = paginator.get_page(pagnum)
+    page = request.GET.get('page')
+    posts = paginator.page(page)
     return render(request, 'talk.html', {'posts' : posts, 'comments' : comments})
 
 def create(request):
