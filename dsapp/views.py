@@ -1,14 +1,18 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post, Comment
 from django.utils import timezone
+from django.core.paginator import Paginator
 # Create your views here.
 
 def main(request):
     return render(request, '../templates/main.html')
 
 def talk(request):
-    posts = Post.objects.filter().order_by('date')
-    comments = Comment.objects.filter().order_by('date')
+    posts = Post.objects.filter().order_by('-date')
+    comments = Comment.objects.filter().order_by('-date')
+    paginator = Paginator(posts, 3)
+    pagnum = request.GET.get('page')
+    posts = paginator.get_page(pagnum)
     return render(request, 'talk.html', {'posts' : posts, 'comments' : comments})
 
 def create(request):
