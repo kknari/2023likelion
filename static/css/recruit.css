@@ -242,6 +242,7 @@ body{
     width: 100%;
     float: left;
     text-align: center;
+    line-height: 1.5;
 }
 
 .fa-plus{
@@ -260,6 +261,13 @@ body{
     display: none;
     word-break: keep-all ;
     margin-top:10px;
+    line-height: 1.5;
+}
+
+.q_wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 /*자주 묻는 질문 애니메이션*/
@@ -553,3 +561,7 @@ body{
     }
 }
 
+
+/* .recruit_wrap{
+    display: flex;
+} */
