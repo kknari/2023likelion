@@ -1,22 +1,10 @@
-.hidden{
-    overflow:hidden;
-}
-h1{
+.maintitle{
     text-align: center;
-    animation: fadeInUp 1.5s;
-    animation-timing-function: ease;
-}
-@keyframes fadeInUp {
-    0% {
-        font-size: 60px;
-        transform: translate3d(0, 80%, 0);
-    }
-    to {
-        transform: translateZ(0);
-    }
+    margin-top: 56px;
 }
 .orgContent{
-    padding: 100px 0 67px 0;
+    padding: 80px;
+    margin: 20px;
 }
 .presidency{
     display: flex;
@@ -36,16 +24,17 @@ h1{
     padding: 20px 220px;
 }
 .card{
-    width: 320px;
+    width: 270px;
     border-radius: 20px;
     box-shadow: 0px 0.796841278193901px 2.3905238345817033px -0.625px rgba(0, 0, 0, 0.05), 0px 2.413677098392273px 7.2410312951768185px -1.25px rgba(0, 0, 0, 0.05), 0px 6.3802836426702925px 19.140850928010877px -1.875px rgba(0, 0, 0, 0.05), 0px 20px 60px -2.5px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
 }
 .cardImg{
-    width: 100%;
-    height: 240px;
+    width: 270px;
+    height: 360px;
     border-radius: 20px 20px 0 0;
-    overflow: hidden;
+    object-fit: cover;
+    background-size: cover;
 }
 .cardContent{
     box-sizing: border-box;
@@ -59,42 +48,53 @@ h1{
 
 
 /* 화면 크기별 크기 조정 */
-@media screen and (max-width: 1439px) {
+@media screen and (min-width:1779px){
+    .orgContent{
+        padding: 80px 400px;
+        margin: 20px;
+    }
+}
+@media screen and (min-width:1580px) and (max-width: 1779px) {
+    .orgContent{
+        padding: 80px 300px;
+        margin: 20px;
+    }
+}
+@media screen and (min-width:1340px) and (max-width: 1580px) {
+    .orgContent{
+        padding: 80px 200px;
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .member{
+        padding: 20px 80px;
+    }
+}
+@media screen and (max-width: 1419px) {
     .member{
         padding: 20px 40px;
     }
 }
-@media screen and (max-width: 1080px) {
-    .member .card{
-        width: 280px;
-    }
-    @keyframes fadeInUp {
-        0% {
-            font-size: 50px;
-            transform: translate3d(0, 80%, 0);
-        }
-        to {
-            transform: translateZ(0);
-        }
+@media screen and (max-width: 1139px) {
+    .member{
+        padding: 20px 30px;
     }
 }
-@media screen and (max-width: 960px) {
-    .member .card{
-        width: 260px;
+@media screen and (max-width: 1110px) {
+    .member{
+        padding: 20px 10px;
     }
 }
-@media screen and (max-width: 900px) {
-    .member .card{
-        width: 240px;
-    }
-}
-@media screen and (max-width: 840px) {
-    .member .card{
-        width: 220px;
+@media screen and (max-width: 10900px) {
+    .member{
+        padding: 20px 0;
+        margin: 0;
+
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
     .orgContent{
         display: flex;
         flex-direction: row;
@@ -108,10 +108,6 @@ h1{
     }
     .orgContent::-webkit-scrollbar{
         display: none;
-    }
-    .card{
-        width: 400px;
-        height: 420px;
     }
     .cardContent{
         box-sizing: border-box;
@@ -127,38 +123,20 @@ h1{
     }
     .mobileCard{
         display: flex;
+        margin-left: 20px;
         gap: 20px;
     }
     .member{
         display: none;
     }
 }
-@media screen and (max-width: 767px){
-    @keyframes fadeInUp {
-        0% {
-            font-size: 40px;
-            transform: translate3d(0, 80%, 0);
-        }
-        to {
-            transform: translateZ(0);
-        }
-    }
-}
+
 @media screen and (max-width: 620px) {
     .orgContent{
         height:460px;
         padding: 0 80px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
-    }
-    @keyframes fadeInUp {
-        0% {
-            font-size: 30px;
-            transform: translate3d(0, 80%, 0);
-        }
-        to {
-            transform: translateZ(0);
-        }
     }
 }
 @media screen and (max-width: 565px) {
@@ -184,20 +162,6 @@ h1{
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
     }
-    .card{
-        width: 320px;
-        height: 360px;
-    }
-    .maintitle{
-        width: auto;
-        height: 96px;
-        color: #000000;
-        font-size: 48px;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 @media screen and (max-width: 400px) {
     .orgContent{
@@ -205,9 +169,5 @@ h1{
         padding: 0 20px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
-    }
-    .card{
-        width: 320px;
-        height: 360px;
     }
 }
