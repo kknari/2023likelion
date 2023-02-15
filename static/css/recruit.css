@@ -83,8 +83,8 @@ body{
 .recruit3{
     box-sizing: border-box;
     width: fit-content;
-    height: 2em;
-    padding : 2px 25px 2px 25px;
+    height: fit-content;
+    padding : 10px 25px 10px 25px;
     background-color: #e7ebf2;
     overflow: visible;
     align-content: center;
