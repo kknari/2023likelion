@@ -12,7 +12,7 @@ def talk(request):
     comments = Comment.objects.filter().order_by('-date')
     paginator = Paginator(posts,  3)
     page = request.GET.get('page', None)
-    if page == None or page == "":
+    if page == None or page == " ":
         page = 1
     posts = paginator.page(page)
     return render(request, 'talk.html', {'posts' : posts, 'comments' : comments})
