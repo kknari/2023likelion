@@ -45,10 +45,13 @@
     </div>
 </form>
 
+<div class="page">
 <!--페이지네이션-->
 {% if posts.has_previous %}
+
     <a href="?page=1">처음</a>
     <a href="?page={{ posts.previous_page_number }}">&#10094;</a>
+
 {% endif %}
 
 
@@ -62,9 +65,13 @@
 
 
 {% if posts.has_next %}
+
 <a href="?page={{ posts.next_page_number }}">&#10095;</a>
 <a href="?page={{ posts.paginator.num_pages }}">끝</a>
+
+
 {% endif %}
+</div>
 <script src="/static/js/blank_check.js"></script>
 {% endblock %}
 

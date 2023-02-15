@@ -47,7 +47,7 @@ body{
 }
 
 .comement{
-    width: fit-content;
+    width: 450px;
     height: fit-content;
     margin: 0 auto;
     margin-top: 100px;
@@ -118,6 +118,7 @@ body{
 
 }
 
+
 .cBtn input{
     width: auto;
     display: flex;
@@ -128,9 +129,28 @@ body{
 }
 
 @media screen and (max-width:550px){
-    
+    .talk {
+        width:fit-content;
+        height: auto; /* 72px */
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        word-break: break-word;
+        color:#858694;
+        line-height: 1.2;
+        text-align: center;
+        margin:  0 auto;
+        animation: fadeInUp 1.3s ease ;
+        margin : 0 3px 0 3px;
+    }
+
+    .write{
+        width: 90vw;
+        height: fit-content;
+        display: flex;
+        margin-top: 100px;
+    }
     .write textarea{
-        width: 350px;
+        width: 90vw;
         border-radius:  10px;
         background-color: rgba(0, 0, 0, 0.03);
         padding : 15px;
@@ -139,7 +159,8 @@ body{
     }
     
     .cBtn{
-        width: 350px;
+        box-sizing: border-box;
+        width: 90vw;
         border-radius:  10px;
         background-color:black;
         padding : 15px;
@@ -193,10 +214,16 @@ body{
         margin-top: 100px;
         flex-direction: column; 
     }
-      
+
 }
 
 .cBtn > input{
     border: none;
     width: 100%;
+}
+
+.page{
+    width: fit-content;
+    margin:  0 auto;
+    margin-bottom: 10px;
 }
