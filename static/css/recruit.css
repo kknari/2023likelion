@@ -22,7 +22,7 @@ body{
 }
 
 .recruit{
-    background-image: url("../img/logo.png");
+    background-image: url("../img/possibilty.jpg");
     box-sizing: border-box;
     flex-shrink: 0;
     width: 1fr;
