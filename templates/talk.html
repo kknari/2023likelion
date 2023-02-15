@@ -48,13 +48,15 @@
 <div class="page">
 
 <!--페이지네이션-->
-{% if posts.has_previous %}
 
+
+{% if posts.number == 1 %}
+    <a style="margin-right :5px">처음</a>
+    <a style="margin-right :5px">&#10094;</a>
+{% else %}
     <a style="margin-right :5px" href="?page=1">처음</a>
     <a style="margin-right :5px" href="?page={{ posts.previous_page_number }}">&#10094;</a>
-
 {% endif %}
-
 
 {% for p in posts.paginator.page_range %}
     {% if posts.number == p %} <!-- 현재 있는 페이지가 num과 같다면-->
@@ -71,13 +73,14 @@
 {% endfor %}
 
 
-{% if posts.has_next %}
-
-<a style="margin-right :5px;" href="?page={{ posts.next_page_number }}">&#10095;</a>
-<a style="margin-right :5px" href="?page={{ posts.paginator.num_pages }}">끝</a>
-
-
+{% if posts.number == posts.paginator.num_pages %}
+    <a style="margin-right :5px">&#10095;</a>
+    <a style="margin-right :5px">끝</a>
+{% else %}
+    <a style="margin-right :5px" href="?page={{ posts.next_page_number }}">&#10095;</a>
+    <a style="margin-right :5px" href="?page={{ posts.paginator.num_pages }}">끝</a>    
 {% endif %}
+
 </div>
 <script src="/static/js/blank_check.js"></script>
 {% endblock %}
