@@ -129,7 +129,19 @@ body{
 }
 
 @media screen and (max-width:550px){
-
+    .talk {
+        width:fit-content;
+        height: auto; /* 72px */
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        word-break: break-word;
+        color:#858694;
+        line-height: 1.2;
+        text-align: center;
+        margin:  0 auto;
+        animation: fadeInUp 1.3s ease ;
+        margin : 0 3px 0 3px;
+    }
 
     .write{
         width: 90vw;
