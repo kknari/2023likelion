@@ -132,6 +132,12 @@
 
 /*Desktop*/
 @media screen and (min-width:1440px) and (max-width: 1970px) {
+    @media screen and (min-width:1440px) and (max-width: 1608px){
+        .back-class-info {
+            line-height: 2;
+        }
+    }
+
     .img-wrap-large{
         display: none;
     }
@@ -274,6 +280,12 @@
 
 /* Desktop(small) */
 @media screen and (min-width:1080px) and (max-width: 1440px) {
+    @media screen and (min-width:1298px) and (max-width: 1440px){
+        .back-class-info {
+            line-height: 2;
+        }
+    }
+
     .img-wrap-large{
         display: none;
     }
