@@ -21,13 +21,13 @@
     {% for post in posts %}
         <div class="que">
             <!--질문-->
-            <h3>{{ post.content }}</h3>
+            <h3>{{ post.content | linebreaksbr}}</h3>
         </div>
         
         {% for comment in comments %}
             {% if post.pk == comment.post.pk %}
                 <!--질문 답변(댓글)-->
-                <p class="ans">{{ comment.comment }}</p>
+                <p class="ans">{{ comment | linebreaksbr}}</p>
             {% endif %}
         {% endfor %}
     {% endfor %}

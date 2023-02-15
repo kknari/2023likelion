@@ -46,6 +46,9 @@
     padding: 30px 30px 30px 30px;
 }
 
+.cardContent > p{
+    line-height: 2;
+}
 
 /* 화면 크기별 크기 조정 */
 @media screen and (min-width:1779px){
