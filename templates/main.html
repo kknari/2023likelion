@@ -12,7 +12,7 @@
       <div class="section1">
         <div class="maintitle">" POSSIBILITY TO REALITY "</div>
         <div id="vouter">
-          <video class="video" loop autoplay muted poster={% static './img/videoposter.png' %}>
+          <video id="vid" class="video" loop autoplay muted playsinline poster={% static './img/videoposter.png' %}>
             <source src={% static './img/likelion_ds.mp4' %} type="video/mp4">
           </video>
         </div>
@@ -25,7 +25,7 @@
   <div class="main_mobile">
     <div class="section1_mobile">
       <div class="maintitle_mobile">"POSSIBILITY <br>&nbsp;TO&nbsp;&nbsp;REALITY"</div>
-        <video class="video" loop autoplay muted poster={% static './img/videoposter.png' %}>
+        <video id="vid" class="video" loop autoplay muted playsinline poster={% static './img/videoposter.png' %}>
           <source src={% static './img/likelion_ds.mp4' %} type="video/mp4">
         </video>
         <div class="sec1textbox_mobile">
@@ -149,5 +149,6 @@
       </div>
     </div>
   </div>
+  <script src="/static/js/autoplay.js"></script>
 </body>
 {% endblock %}
