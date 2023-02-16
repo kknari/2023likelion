@@ -550,7 +550,6 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 35px;
     }
 
     .video{
@@ -567,6 +566,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -693,7 +693,6 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 25px;
     }
 
     .video{
@@ -710,6 +709,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -829,7 +829,6 @@
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 25px;
     }
 
     .video{
@@ -840,12 +839,14 @@
     .textbox_moblie{
         line-height: 1.8;
         color: #858694;
+        font-size: 3.2vw;
     }
 
     .sec1textbox_mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -976,7 +977,7 @@
     .textbox_moblie {
         line-height: 1.8;
         color: #858694;
-        font-size: 12px;
+        font-size: 3.1vw;
     }
 
     .sec1textbox_mobile{

@@ -187,7 +187,7 @@ body{
         letter-spacing: 0px;
         line-height: 1.5;
         white-space:normal;
-        word-break:break-all
+        word-break: break-all;
     }
     
     .ans{
@@ -233,3 +233,13 @@ body{
     width:20px;
     height: 20px;
 }
+
+.p_wrap{
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.p_wrap > p{
+    word-break: keep-all;
+}
+
