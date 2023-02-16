@@ -178,6 +178,7 @@
         color: #858694;
         margin-top: 15px;
         line-height: 2;
+        word-break: keep-all;
     }
 
     .box1txt, .box2txt, .box3txt{
@@ -495,6 +496,8 @@
         margin-top:14.86px;
         justify-content: center;
         align-items: flex-start;
+        line-height: 1.2;
+        word-break: keep-all;
       }
       .commit_detail{
           margin-top: 10px;

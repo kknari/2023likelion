@@ -3,6 +3,7 @@
 
 body{
     margin: 0;
+    word-break: keep-all;
 }
 /*타이틀부분*/
 
@@ -253,6 +254,7 @@ body{
 .fa-solid{
     width: 14px;
     height: 16px;
+    margin-top: 2px;
 }
 
 .a{
@@ -571,6 +573,40 @@ body{
 
 
 
-@media screen and (max-width:641px){ 
+@media screen and (max-width:467px){ 
+    .recruit2{
+        font-size: 3.5vw !important;
+        text-align: center;
+    }
 
+    .recruit1{
+        font-size: 7.5vw !important;
+    }
+}
+
+@media screen and (max-width:641px){ 
+    .recruit2{
+        text-align: center;
+    }
+
+}
+
+.card2> ul{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+.card1 > ul{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+.card3 > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

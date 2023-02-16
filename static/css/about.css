@@ -76,6 +76,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        word-break: keep-all;
     }
 
     .track-title{
@@ -313,6 +314,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        word-break: keep-all;
     }   
     
     .track-title{
