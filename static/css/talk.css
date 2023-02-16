@@ -59,7 +59,7 @@ body{
     display: flex;
     margin-left: auto;
     width:fit-content;
-    height: 30px ;
+    height: fit-content;
     padding:20px 20px 20px 20px;
     background-color: #e8cad2;
     border-radius:  20px 3px 20px 20px;
