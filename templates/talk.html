@@ -33,6 +33,8 @@
     </div>
 </div>
 
+
+
 <!--글 작성-->
 <form action="{% url 'create' %}" method="POST" onsubmit="return space_check();">
     {% csrf_token %}

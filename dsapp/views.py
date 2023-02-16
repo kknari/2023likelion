@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post, Comment
 from django.utils import timezone
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 # Create your views here.
 
 def main(request):
@@ -9,6 +10,7 @@ def main(request):
 def talk(request):
     posts = Post.objects.filter().order_by('date')
     comments = Comment.objects.filter().order_by('date')
+
     return render(request, 'talk.html', {'posts' : posts, 'comments' : comments})
 
 def create(request):
