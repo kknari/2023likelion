@@ -17,11 +17,11 @@
   </head>
 
     {% include 'header.html' %}
-    <body>
+    <body oncontextmenu="return blockRightClick()" style="-webkit-touch-callout:none">
     {% block content %}
     {% endblock %}
     </body>
     {% include 'footer.html' %}
     <script src="/static/js/nav_activate.js"></script>
-  
+    <script src="/static/js/scrab_block.js"></script>
 </html>

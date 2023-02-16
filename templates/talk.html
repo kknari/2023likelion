@@ -15,18 +15,19 @@
     </h1>
 
     <p class="talk">덕성여자대학교 멋쟁이사자처럼을 위해 응원의 한마디를 남겨보세요!</p>
+    
 
     <div class="comement">
     {% for post in posts %}
         <div class="que">
             <!--질문-->
-            <h3>{{ post.content }}</h3>
+            <h3>{{ post.content | linebreaksbr}}</h3>
         </div>
         
         {% for comment in comments %}
             {% if post.pk == comment.post.pk %}
                 <!--질문 답변(댓글)-->
-                <p class="ans">{{ comment }}</p>
+                <p class="ans">{{ comment.comment | linebreaksbr}}</p>
             {% endif %}
         {% endfor %}
     {% endfor %}
@@ -45,5 +46,44 @@
         <input type="submit" value="글 생성하기">
     </div>
 </form>
+
+<div class="page">
+
+<!--페이지네이션-->
+
+
+{% if posts.number == 1 %}
+    <a style="margin-right :5px">처음</a>
+    <a style="margin-right :5px">&#10094;</a>
+{% else %}
+    <a style="margin-right :5px" href="?page=1">처음</a>
+    <a style="margin-right :5px" href="?page={{ posts.previous_page_number }}">&#10094;</a>
+{% endif %}
+
+{% for p in posts.paginator.page_range %}
+    {% if posts.number == p %} <!-- 현재 있는 페이지가 num과 같다면-->
+        <strong><a 
+            style="margin-right :5px;
+            background-color:#e8cad2;
+            padding:0 6px 0 6px;
+            border-radius:50%;
+            color:#000;
+            " href="?page={{ p }}">{{ p }}</a></strong>
+    {% else %}
+        <a style="margin-right :5px;padding:0 6px 0 6px;" href="?page={{ p }}">{{ p }}</a> <!-- 나머지 페이지들은 그냥 출력-->
+    {% endif %}
+{% endfor %}
+
+
+{% if posts.number == posts.paginator.num_pages %}
+    <a style="margin-right :5px">&#10095;</a>
+    <a style="margin-right :5px">끝</a>
+{% else %}
+    <a style="margin-right :5px" href="?page={{ posts.next_page_number }}">&#10095;</a>
+    <a style="margin-right :5px" href="?page={{ posts.paginator.num_pages }}">끝</a>    
+{% endif %}
+
+</div>
 <script src="/static/js/blank_check.js"></script>
 {% endblock %}
+

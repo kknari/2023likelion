@@ -3,6 +3,7 @@
 
 body{
     margin: 0;
+    word-break: keep-all;
 }
 /*타이틀부분*/
 
@@ -22,7 +23,7 @@ body{
 }
 
 .recruit{
-    background-image: url("../img/logo.png");
+    background-image: url("../img/possibilty.jpg");
     box-sizing: border-box;
     flex-shrink: 0;
     width: 1fr;
@@ -57,7 +58,6 @@ body{
     position: relative;
     color: #e7ebf2;
     line-height: 1.2;
-    animation: fadeInUp2 1.3s ease ;
 }
 
 .recruit2{
@@ -77,14 +77,13 @@ body{
     position: relative;
     color: #e7ebf2;
     line-height: 1.2;
-    animation: fadeInUp2 1.6s ease ;
 }
 
 .recruit3{
     box-sizing: border-box;
     width: fit-content;
-    height: 2em;
-    padding : 2px 25px 2px 25px;
+    height: fit-content;
+    padding : 10px 25px 10px 25px;
     background-color: #e7ebf2;
     overflow: visible;
     align-content: center;
@@ -94,7 +93,6 @@ body{
     position: relative;
     border-radius: 100px;
     border: 1px solid rgba(231, 235, 242, 0);
-    animation: fadeInUp2 2s ease ;
 }
 
 
@@ -242,6 +240,7 @@ body{
     width: 100%;
     float: left;
     text-align: center;
+    line-height: 1.5;
 }
 
 .fa-plus{
@@ -252,6 +251,12 @@ body{
     color: #988ACA;
 }
 
+.fa-solid{
+    width: 14px;
+    height: 16px;
+    margin-top: 2px;
+}
+
 .a{
     width: 100%;
     float: left;
@@ -260,6 +265,13 @@ body{
     display: none;
     word-break: keep-all ;
     margin-top:10px;
+    line-height: 1.5;
+}
+
+.q_wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 /*자주 묻는 질문 애니메이션*/
@@ -269,8 +281,8 @@ body{
 }
 
 .plusRotate{
-    transform: rotate(130deg);
-    transition: 1s;
+    transform: rotate(45deg);
+    transition: 0.5s;
 }
 
 .showText{
@@ -551,5 +563,50 @@ body{
         border-radius: 20px;
         margin-bottom: 40px;
     }
+    
 }
 
+
+/* .recruit_wrap{
+    display: flex;
+} */
+
+
+
+@media screen and (max-width:467px){ 
+    .recruit2{
+        font-size: 3.5vw !important;
+        text-align: center;
+    }
+
+    .recruit1{
+        font-size: 7.5vw !important;
+    }
+}
+
+@media screen and (max-width:641px){ 
+    .recruit2{
+        text-align: center;
+    }
+
+}
+
+.card2> ul{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+.card1 > ul{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+}
+
+.card3 > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -41,7 +41,7 @@
         font-size: 80px;
         font-weight: 595;
         margin-top: 20px;
-        font-family: 'NanumSquareNeo-Variable';
+        font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
         animation: fadeInUp 1s;
     }
     
@@ -178,6 +178,7 @@
         color: #858694;
         margin-top: 15px;
         line-height: 2;
+        word-break: keep-all;
     }
 
     .box1txt, .box2txt, .box3txt{
@@ -495,6 +496,8 @@
         margin-top:14.86px;
         justify-content: center;
         align-items: flex-start;
+        line-height: 1.2;
+        word-break: keep-all;
       }
       .commit_detail{
           margin-top: 10px;
@@ -1082,7 +1085,7 @@
     padding: 0;
     margin: 0;
     /* font-family: 'Noto Sans KR', sans-serif; */
-    font-family: 'NanumSquareNeo-Variable';
+    font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
     
 }
 
