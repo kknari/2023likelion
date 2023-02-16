@@ -369,6 +369,7 @@
         font-size: 52px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        font-weight: 590;
     }
 
     .section1{
@@ -507,14 +508,14 @@
         font-size:1.5em;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .commit_r{
         font-size:1.5em;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .outsection{
@@ -541,6 +542,7 @@
         font-size: 50px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        font-weight: 590;
     }
 
     .section1_mobile{
@@ -653,14 +655,14 @@
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .outsection{
@@ -790,13 +792,13 @@
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .outsection{
         padding-top: 60px;
@@ -923,18 +925,19 @@
           margin-top: 10px;
           margin-bottom: 10px;
           font-size: 15.5px;
+          word-break: keep-all;
       }
       .commit{
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .outsection{
         padding-top: 60px;
@@ -956,7 +959,7 @@
     .maintitle_mobile {
         display: flex;
         font-size: 39px;
-        font-weight: bold;
+        font-weight: 590;
         animation: fadeInUp 1s;
     }
 
@@ -1066,19 +1069,20 @@
       .commit_detail{
           margin-top: 10px;
           margin-bottom: 10px;
+          word-break: keep-all;
       }
       .commit{
-        font-size:18px;
+        font-size : 3.8vw;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
-        font-size:18px;
+        font-size : 3.8vw;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
-      }
+        font-weight: 550;
+        }
       .outsection{
         padding-top: 60px;
       }

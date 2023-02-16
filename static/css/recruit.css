@@ -46,7 +46,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
+    font-weight: 590;
     flex-shrink: 0;
     width: 1fr;
     height: auto; /* 51px */
@@ -88,7 +88,7 @@ body{
     overflow: visible;
     align-content: center;
     flex-wrap: nowrap;
-    font-weight: bold;
+    font-weight: 500;
     margin:  0 auto;
     position: relative;
     border-radius: 100px;
@@ -610,3 +610,11 @@ body{
     flex-direction: column;
     gap: 10px;
 }
+
+@media screen and (max-width:641px){
+    .card1 > h1, .card1 > h1, .card1 > h1{
+        font-weight: 500px;
+    }
+    
+}
+
