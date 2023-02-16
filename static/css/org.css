@@ -187,3 +187,54 @@
         scrollbar-width: none; /* 파이어폭스 */
     }
 }
+
+@media screen and (min-width:768px) and (max-width: 1079px) {
+	.maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+}
+
+
+@media screen and (min-width:719px) and (max-width: 767px) {
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+    
+}
+
+@media screen and (min-width:615px) and (max-width: 718px) { 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+    
+}
+
+@media screen and (min-width:496px) and (max-width: 615px) { 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+
+   
+}
+
+@media screen and (max-width:495px){ 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+  
+}
