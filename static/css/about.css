@@ -1172,6 +1172,22 @@
     margin-left: 10px;
 }
 
+@media screen and (min-width:1080px) and (max-width: 1439px) {
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+  
+}
+
 @media screen and (min-width:768px) and (max-width: 1079px) {
 	.about-title{
         font-weight: 590;

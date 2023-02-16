@@ -165,12 +165,12 @@
 
     .box3title, .box2title, .box1title{
         font-size: 44px;
-        font-weight: bold;
+        font-weight: 595;
         line-height: 0.8;
     }
     .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
         font-size: 44px;
-        font-weight: bold;
+        font-weight: 595;
         color: #80243F;
         line-height: 1.5;
     }
@@ -322,12 +322,12 @@
 
     .box3title, .box2title, .box1title{
         font-size: 38px;
-        font-weight: bold;
+        font-weight: 595;
         line-height: 0.8;
     }
     .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
         font-size: 38px;
-        font-weight: bold;
+        font-weight: 595;
         color: #80243F;
         line-height: 1.4;
     }
