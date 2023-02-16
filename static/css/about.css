@@ -76,6 +76,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }
 
@@ -123,7 +124,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
     
     .check-wrap{
@@ -175,6 +175,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        line-height: 1.5;
     }
 
     .track-title{
@@ -221,7 +222,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
     
 
@@ -314,6 +314,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        line-height: 1.5;
     }   
     
     .track-title{
@@ -360,7 +361,6 @@
         border-radius: 20px;
         flex: 1 1 30%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper{
@@ -456,6 +456,7 @@
         color: #666666;
         font-size: 18px;
         margin-top: 10px;
+        line-height: 1.5;
     }    
 
     .track-title{
@@ -506,7 +507,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper{
@@ -601,6 +601,7 @@
         color: #666666;
         font-size: 18px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -652,7 +653,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper{
@@ -741,6 +741,7 @@
         color: #666666;
         font-size: 15px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -796,7 +797,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 20px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper {
@@ -860,6 +860,7 @@
         margin: 10px auto;
         font-size: 14px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -915,7 +916,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 20px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper {
@@ -979,6 +979,7 @@
         margin: 10px auto;
         font-size: 14px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -1036,7 +1037,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 20px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper {
