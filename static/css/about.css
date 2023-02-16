@@ -1171,3 +1171,81 @@
 .check-content{
     margin-left: 10px;
 }
+
+@media screen and (min-width:768px) and (max-width: 1079px) {
+	.about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+
+@media screen and (min-width:719px) and (max-width: 767px) {
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:615px) and (max-width: 718px) { 
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:496px) and (max-width: 615px) { 
+
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+@media screen and (max-width:495px){ 
+  
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}

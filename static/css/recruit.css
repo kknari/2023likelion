@@ -618,3 +618,89 @@ body{
     
 }
 
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-style: normal;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+@media screen and (min-width:1080px) and (max-width: 1439px) {
+
+  
+}
+
+
+@media screen and (min-width:768px) and (max-width: 1079px) {
+	.title{
+        font-weight: 590;
+    }
+    .card1 > h1, .card2 > h1, .card3 > h1 {
+        font-weight: 590 !important;
+    }
+    .question{
+        font-weight: 590;
+    }
+}
+
+
+@media screen and (min-width:719px) and (max-width: 767px) {
+    .title{
+        font-weight: 590;
+    }
+    .card1 > h1, .card2 > h1, .card3 > h1 {
+        font-weight: 590 !important;
+    }
+    .question{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:615px) and (max-width: 718px) { 
+    .title{
+        font-weight: 590;
+    }
+    .card1 > h1, .card2 > h1, .card3 > h1 {
+        font-weight: 590 !important;
+    }
+    .question{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:496px) and (max-width: 615px) { 
+
+    .title{
+        font-weight: 590;
+    }
+    .card1 > h1, .card2 > h1, .card3 > h1 {
+        font-weight: 590 !important;
+    }
+    .question{
+        font-weight: 590;
+    }
+}
+
+@media screen and (max-width:495px){ 
+  
+    .title{
+        font-weight: 590;
+    }
+    .card1 > h1, .card2 > h1, .card3 > h1 {
+        font-weight: 590 !important;
+    }
+    .question{
+        font-weight: 590;
+    }
+}
