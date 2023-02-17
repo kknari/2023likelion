@@ -274,7 +274,7 @@ body{
 }
 
 
-@media screen and (min-width:719px) and (max-width: 767px) {
+@media screen and (min-width:719px) and (max-width: 769px) {
     .title{
         font-weight: 590;
     }
