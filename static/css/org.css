@@ -104,7 +104,7 @@
         justify-content: start;
         overflow-x: scroll;
         overflow-y: hidden;
-        height:460px;
+        height:490px;
         padding: 0 100px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
@@ -114,7 +114,7 @@
     }
     .cardContent{
         box-sizing: border-box;
-        height: 80px; /* 134px */
+        height: 100px; /* 134px */
         display: bolck;
         flex-direction: column;
         justify-content: center;
@@ -149,7 +149,7 @@
 
 @media screen and (max-width: 620px) {
     .orgContent{
-        height:460px;
+        height:490px;
         padding: 0 80px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
@@ -157,7 +157,7 @@
 }
 @media screen and (max-width: 565px) {
     .orgContent{
-        height:460px;
+        height:490px;
         padding: 0 60px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
@@ -165,7 +165,7 @@
 }
 @media screen and (max-width: 530px) {
     .orgContent{
-        height:460px;
+        height:490px;
         padding: 0 35px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
@@ -173,7 +173,7 @@
 }
 @media screen and (max-width: 500px) {
     .orgContent{
-        height:460px;
+        height:490px;
         padding: 0 50px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
@@ -181,9 +181,72 @@
 }
 @media screen and (max-width: 400px) {
     .orgContent{
-        height:460px;
+        height:490px;
         padding: 0 20px;
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
     }
+}
+
+
+@media screen and (min-width:1080px) and (max-width: 1439px) {
+
+    .maintitle{
+        font-weight: 590;
+    }
+
+    .cardContent > h3{
+        font-weight: 595;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1079px) {
+	.maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+}
+
+
+@media screen and (min-width:719px) and (max-width: 767px) {
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+    
+}
+
+@media screen and (min-width:615px) and (max-width: 718px) { 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+    
+}
+
+@media screen and (min-width:496px) and (max-width: 615px) { 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+
+   
+}
+
+@media screen and (max-width:495px){ 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+  
 }

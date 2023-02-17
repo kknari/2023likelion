@@ -165,12 +165,12 @@
 
     .box3title, .box2title, .box1title{
         font-size: 44px;
-        font-weight: bold;
+        font-weight: 595;
         line-height: 0.8;
     }
     .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
         font-size: 44px;
-        font-weight: bold;
+        font-weight: 595;
         color: #80243F;
         line-height: 1.5;
     }
@@ -178,6 +178,7 @@
         color: #858694;
         margin-top: 15px;
         line-height: 2;
+        word-break: keep-all;
     }
 
     .box1txt, .box2txt, .box3txt{
@@ -321,12 +322,12 @@
 
     .box3title, .box2title, .box1title{
         font-size: 38px;
-        font-weight: bold;
+        font-weight: 595;
         line-height: 0.8;
     }
     .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
         font-size: 38px;
-        font-weight: bold;
+        font-weight: 595;
         color: #80243F;
         line-height: 1.4;
     }
@@ -368,6 +369,7 @@
         font-size: 52px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        font-weight: 590;
     }
 
     .section1{
@@ -495,6 +497,8 @@
         margin-top:14.86px;
         justify-content: center;
         align-items: flex-start;
+        line-height: 1.2;
+        word-break: keep-all;
       }
       .commit_detail{
           margin-top: 10px;
@@ -504,14 +508,14 @@
         font-size:1.5em;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .commit_r{
         font-size:1.5em;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .outsection{
@@ -538,6 +542,7 @@
         font-size: 50px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        font-weight: 590;
     }
 
     .section1_mobile{
@@ -563,6 +568,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -649,14 +655,14 @@
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .outsection{
@@ -705,6 +711,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -785,13 +792,13 @@
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .outsection{
         padding-top: 60px;
@@ -834,12 +841,14 @@
     .textbox_moblie{
         line-height: 1.8;
         color: #858694;
+        font-size: 3.2vw;
     }
 
     .sec1textbox_mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -916,18 +925,19 @@
           margin-top: 10px;
           margin-bottom: 10px;
           font-size: 15.5px;
+          word-break: keep-all;
       }
       .commit{
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .outsection{
         padding-top: 60px;
@@ -949,7 +959,7 @@
     .maintitle_mobile {
         display: flex;
         font-size: 39px;
-        font-weight: bold;
+        font-weight: 590;
         animation: fadeInUp 1s;
     }
 
@@ -970,13 +980,14 @@
     .textbox_moblie {
         line-height: 1.8;
         color: #858694;
-        font-size: 12px;
+        font-size: 3.1vw;
     }
 
     .sec1textbox_mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -1058,19 +1069,20 @@
       .commit_detail{
           margin-top: 10px;
           margin-bottom: 10px;
+          word-break: keep-all;
       }
       .commit{
-        font-size:18px;
+        font-size : 3.8vw;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
-        font-size:18px;
+        font-size : 3.8vw;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
-      }
+        font-weight: 550;
+        }
       .outsection{
         padding-top: 60px;
       }

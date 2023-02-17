@@ -12,8 +12,8 @@
       <div class="section1">
         <div class="maintitle">" POSSIBILITY TO REALITY "</div>
         <div id="vouter">
-          <video class="video" loop autoplay muted poster={% static './img/videoposter.png' %}>
-            <source src={% static './img/sample.mp4' %} type="video/mp4">
+          <video id="vid" class="video" loop autoplay muted playsinline poster={% static './img/videoposter.png' %}>
+            <source src={% static './img/likelion_ds.mp4' %} type="video/mp4">
           </video>
         </div>
         <div class="sec1textbox">
@@ -25,8 +25,8 @@
   <div class="main_mobile">
     <div class="section1_mobile">
       <div class="maintitle_mobile">"POSSIBILITY <br>&nbsp;TO&nbsp;&nbsp;REALITY"</div>
-        <video class="video" loop autoplay muted poster={% static './img/videoposter.png' %}>
-          <source src={% static './img/sample.mp4' %} type="video/mp4">
+        <video id="vid" class="video" loop autoplay muted playsinline poster={% static './img/videoposter.png' %}>
+          <source src={% static './img/likelion_ds.mp4' %} type="video/mp4">
         </video>
         <div class="sec1textbox_mobile">
           <div class="textbox_moblie">2023 덕성여자대학교 멋쟁이사자처럼에서는 개발에 대한 열정과<br>빛나는 아이디어를 갖고 있는 11기 아기사자를 기다리고 있습니다.</div>
@@ -43,7 +43,7 @@
           <div class="box1txt">
             <h2 class="box1title">2023 덕성 멋사</h2>
             <h2 class="box1title">11기 운영진</h2>
-            <div class="box1detail">2023년을 책임질 11기 운영진을 소개합니다!</div>
+            <div class="box1detail">2023년을 책임질 덕성여자대학교 멋쟁이사자처럼 11기 운영진을 소개합니다!</div>
           </div>
         </div>
       </a>
@@ -63,7 +63,7 @@
           <div class="box3txt">
             <h2 class="box3title">덕성 멋사에게</h2>
             <h2 class="box3title">물어보세요!</h2>
-            <div class="box3detail">11기 덕성여자대학교 멋쟁이사자처럼에게<br>질문 및  응원 메시지를 남겨보세요!</div>
+            <div class="box3detail">11기 덕성여자대학교 멋쟁이사자처럼에게 질문 및  응원 메시지를 남겨보세요!</div>
           </div>
         </div>
       </a>
@@ -103,7 +103,7 @@
             <div class="representativeTitle1">
               <div class="commit">덕성 멋사에게</div>
               <div class="commit_r">물어보세요!</div>
-              <div class="commit_detail">11기 덕성여자대학교 멋쟁이사자처럼에게 질문 및  응원 메시지를 남겨보세요!</div>
+              <div class="commit_detail">덕성여자대학교 멋쟁이사자처럼에게 질문 및 응원 메시지를 남겨보세요!</div>
             </div>
           </div>
         </a>
@@ -141,7 +141,7 @@
           <div class="link">
             <div class="representativeTitle1">
               <div class="commit">덕성 멋사에게 <span>물어보세요!</span></div>
-              <div class="commit_detail">11기 덕성여자대학교 멋쟁이사자처럼에게 질문 및  응원 메시지를 남겨보세요</div>
+              <div class="commit_detail">11기 덕성여자대학교 멋쟁이사자처럼에게 질문 및 응원 메시지를 남겨보세요</div>
             </div>
             <img class="representativeImg" src={% static './img/talk.jpg' %}/>
           </div>
@@ -149,5 +149,6 @@
       </div>
     </div>
   </div>
+  <script src="/static/js/autoplay.js"></script>
 </body>
 {% endblock %}
