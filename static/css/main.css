@@ -34,6 +34,17 @@
         justify-content: center;
     }
 
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 39px;
+        font-size: 80px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
     .maintitle{
         width: auto;
         /* height: 96px; */
@@ -201,6 +212,19 @@
     .main_mobile{
         display: none;
     }
+
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 72px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
+
     .maintitle{
         width: auto;
         height: 96px;
@@ -365,14 +389,25 @@
     .main_mobile{
         display: none;
     }
+
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 52px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
     .maintitle{
         width: auto;
         color: #000000;
         font-size: 52px;
-        font-weight: bold;
+
         animation: fadeInUp 1s;
         text-align: center;
-        font-weight: 590;
+        font-weight: 595;
         margin-top: 30px;
     }
 
@@ -544,20 +579,31 @@
     .maintitle_mobile{
         display: flex;
         font-size: 50px;
-        font-weight: bold;
+
         animation: fadeInUp 1s;
-        font-weight: 590;
+        font-weight: bold;
         margin-top: 40px;
         text-align: center;
+    }
+
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
     }
     .maintitle{
         width: auto;
         color: #000000;
         font-size: 50px;
-        font-weight: bold;
+
         animation: fadeInUp 1s;
         text-align: center;
-        font-weight: 590;
+        font-weight: 595;
         margin-top: 30px;
     }
     .section1_mobile{
@@ -695,14 +741,25 @@
     .main_mobile{
         width: 100%;
     }
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
     .maintitle{
         width: auto;
         color: #000000;
         font-size: 50px;
-        font-weight: bold;
+
         animation: fadeInUp 1s;
         text-align: center;
-        font-weight: 590;
+        font-weight: 595;
         margin-top: 30px;
     }
     .maintitle_mobile{
@@ -837,6 +894,16 @@
     .main{
         display: none;
     }
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
 
     .main_mobile{
         width: 100%;
@@ -845,10 +912,10 @@
         width: auto;
         color: #000000;
         font-size: 50px;
-        font-weight: bold;
+
         animation: fadeInUp 1s;
         text-align: center;
-        font-weight: 590;
+        font-weight: 595;
         margin-top: 30px;
     }
     .maintitle_mobile{
@@ -987,6 +1054,16 @@
         display: none;
     }
 
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 39px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
     .main_mobile{
         width: 100%;
     }
@@ -994,10 +1071,10 @@
         width: auto;
         color: #000000;
         font-size: 39px;
-        font-weight: bold;
+
         animation: fadeInUp 1s;
         text-align: center;
-        font-weight: 590;
+        font-weight: 595;
         margin-top: 30px;
     }
     .maintitle_mobile {
@@ -1142,6 +1219,7 @@
     font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
     
 }
+
 
 
 
