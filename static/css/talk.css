@@ -7,7 +7,8 @@ body{
 }
 
 .maintitle{
-    flex-shrink: 0;
+    
+    font-weight: 595;
     width: auto; /* 364px */
     height: auto; /* 96px */
     white-space: pre;
@@ -18,7 +19,6 @@ body{
     margin:  0 auto;
     font-size: 80px;
     margin-top : 75px;
-    font-weight: 595;
     animation: fadeInUp 1s;
 }
 
@@ -130,6 +130,8 @@ body{
 }
 
 @media screen and (max-width:550px){
+
+    
     .talk {
         width:fit-content;
         height: auto; /* 72px */
@@ -245,79 +247,6 @@ body{
     word-break: keep-all;
 }
 
-@media screen and (min-width : 1439px) {
-    .maintitle{
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-
-@media screen and (min-width:1080px) and (max-width: 1439px) {
-
-    .maintitle
-        {
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1079px) {
-    .maintitle
-        {
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-
-@media screen and (min-width:719px) and (max-width: 769kpx) {
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-@media screen and (min-width:615px) and (max-width: 718px) { 
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-@media screen and (min-width:496px) and (max-width: 615px) { 
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-   
-}
-
-@media screen and (max-width:495px){ 
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
 
 /*토크 페이지네이션 원*/
 
@@ -332,4 +261,8 @@ body{
 .other{
     margin-right :5px;
     padding:0 6px 0 6px;
+}
+
+.que > h3{
+    font-weight: 480;
 }
