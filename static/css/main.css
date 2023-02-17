@@ -56,6 +56,17 @@
         animation: fadeInUp 1s;
         text-align: center;
     }
+
+    .pmaintitle{
+        width: auto;
+        /* height: 96px; */
+        color: #000000;
+        font-size: 80px;
+        margin-top: 20px;
+        font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
+        animation: fadeInUp 1s;
+        text-align: center;
+    }
     
     .section1{
         display: flex;
@@ -235,6 +246,16 @@
         text-align: center;
     }
 
+    .pmaintitle{
+        width: auto;
+        height: 96px;
+        color: #000000;
+        font-size: 72px;
+        font-weight: 595;
+        animation: fadeInUp 1s;
+        text-align: center;
+    }
+
     .section1{
         display: flex;
         width: 100%;
@@ -404,7 +425,6 @@
         width: auto;
         color: #000000;
         font-size: 52px;
-
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 595;
@@ -600,7 +620,6 @@
         width: auto;
         color: #000000;
         font-size: 50px;
-
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 595;
@@ -756,7 +775,6 @@
         width: auto;
         color: #000000;
         font-size: 50px;
-
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 595;
@@ -912,7 +930,6 @@
         width: auto;
         color: #000000;
         font-size: 50px;
-
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 595;
@@ -1071,7 +1088,6 @@
         width: auto;
         color: #000000;
         font-size: 39px;
-
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 595;
