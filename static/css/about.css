@@ -54,9 +54,9 @@
     }
 
     .about-title{
-        font-size: 88px;
+        font-size: 80px;
         font-weight: bold;
-        margin-top: 56px;
+        margin-top: 75px;
     }
 
     .info-text-wrap{
@@ -76,6 +76,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }
 
@@ -123,7 +124,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
     
     .check-wrap{
@@ -144,9 +144,8 @@
     }
 
     .about-title{
-        font-size: 88px;
-        font-weight: bold;
-        margin-top: 56px;
+        font-size: 80px;
+        margin-top: 75px;
     }
 
     .swiper{
@@ -175,6 +174,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        line-height: 1.5;
     }
 
     .track-title{
@@ -221,7 +221,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
     
 
@@ -292,10 +291,8 @@
     }
 
     .about-title{
-        font-size: 78px;
-        font-weight: bold;
-        margin-top: 56px
-        ;
+        font-size: 80px;
+        margin-top: 75px;
     }
 
     .info-text-wrap{
@@ -314,6 +311,7 @@
         color: #666666;
         font-size: 20px;
         margin-top: 10px;
+        line-height: 1.5;
     }   
     
     .track-title{
@@ -360,7 +358,6 @@
         border-radius: 20px;
         flex: 1 1 30%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper{
@@ -456,6 +453,7 @@
         color: #666666;
         font-size: 18px;
         margin-top: 10px;
+        line-height: 1.5;
     }    
 
     .track-title{
@@ -506,7 +504,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper{
@@ -601,6 +598,7 @@
         color: #666666;
         font-size: 18px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -652,7 +650,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 30px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper{
@@ -741,6 +738,7 @@
         color: #666666;
         font-size: 15px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -796,7 +794,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 20px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper {
@@ -860,6 +857,7 @@
         margin: 10px auto;
         font-size: 14px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -915,7 +913,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 20px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper {
@@ -979,6 +976,7 @@
         margin: 10px auto;
         font-size: 14px;
         margin-top: 10px;
+        line-height: 1.5;
          
     }    
 
@@ -1036,7 +1034,6 @@
         border-radius: 20px;
         flex: 1 1 40%;
         margin: 20px;
-        box-shadow: 3px 3px 15px 2px gray;
     }
 
     .swiper {
@@ -1170,4 +1167,98 @@
 
 .check-content{
     margin-left: 10px;
+}
+
+@media screen and (min-width:1080px) and (max-width: 1439px) {
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+  
+}
+
+@media screen and (min-width:768px) and (max-width: 1079px) {
+	.about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+
+@media screen and (min-width:719px) and (max-width: 767px) {
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:615px) and (max-width: 718px) { 
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:496px) and (max-width: 615px) { 
+
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
+}
+
+@media screen and (max-width:495px){ 
+  
+    .about-title{
+        font-weight: 590;
+    }
+    .track-title{
+        font-weight: 590;
+    }
+    .front-title{
+        font-weight: 590;
+    }
+    .back-title{
+        font-weight: 590;
+    }
 }

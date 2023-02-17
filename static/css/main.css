@@ -34,6 +34,17 @@
         justify-content: center;
     }
 
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 39px;
+        font-size: 80px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
     .maintitle{
         width: auto;
         /* height: 96px; */
@@ -43,6 +54,18 @@
         margin-top: 20px;
         font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
         animation: fadeInUp 1s;
+        text-align: center;
+    }
+
+    .pmaintitle{
+        width: auto;
+        /* height: 96px; */
+        color: #000000;
+        font-size: 80px;
+        margin-top: 20px;
+        font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
+        animation: fadeInUp 1s;
+        text-align: center;
     }
     
     .section1{
@@ -165,12 +188,12 @@
 
     .box3title, .box2title, .box1title{
         font-size: 44px;
-        font-weight: bold;
+        font-weight: 595;
         line-height: 0.8;
     }
     .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
         font-size: 44px;
-        font-weight: bold;
+        font-weight: 595;
         color: #80243F;
         line-height: 1.5;
     }
@@ -188,7 +211,7 @@
     /*섹션 2 끝*/
 }
 
-@media screen and (min-width:1080px) and (max-width: 1439px) {
+@media screen and (min-width:1080px) and (max-width: 1440px) {
 
 	/* Tablet */
     .main{
@@ -200,6 +223,19 @@
     .main_mobile{
         display: none;
     }
+
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 72px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
+
     .maintitle{
         width: auto;
         height: 96px;
@@ -207,6 +243,17 @@
         font-size: 72px;
         font-weight: 595;
         animation: fadeInUp 1s;
+        text-align: center;
+    }
+
+    .pmaintitle{
+        width: auto;
+        height: 96px;
+        color: #000000;
+        font-size: 72px;
+        font-weight: 595;
+        animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1{
@@ -322,12 +369,12 @@
 
     .box3title, .box2title, .box1title{
         font-size: 38px;
-        font-weight: bold;
+        font-weight: 595;
         line-height: 0.8;
     }
     .box3title:nth-of-type(2), .box2title:nth-of-type(2), .box1title:nth-of-type(2){
         font-size: 38px;
-        font-weight: bold;
+        font-weight: 595;
         color: #80243F;
         line-height: 1.4;
     }
@@ -352,7 +399,7 @@
 }
 
 
-@media screen and (min-width:768px) and (max-width: 1079px) {
+@media screen and (min-width:768px) and (max-width: 1080px) {
 	/* Tablet */
     .main{
         display: flex;
@@ -363,12 +410,25 @@
     .main_mobile{
         display: none;
     }
+
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 52px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+
     .maintitle{
         width: auto;
         color: #000000;
         font-size: 52px;
-        font-weight: bold;
         animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
     }
 
     .section1{
@@ -507,14 +567,14 @@
         font-size:1.5em;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .commit_r{
         font-size:1.5em;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .outsection{
@@ -526,7 +586,7 @@
 
 /* 여기까지가 좌우 카드 느낌 정렬*/
 
-@media screen and (min-width:719px) and (max-width: 767px) {
+@media screen and (min-width:719px) and (max-width: 768px) {
 	/* Tablet */
     .main{
         display: none;
@@ -539,10 +599,32 @@
     .maintitle_mobile{
         display: flex;
         font-size: 50px;
-        font-weight: bold;
+
         animation: fadeInUp 1s;
+        font-weight: bold;
+        margin-top: 40px;
+        text-align: center;
     }
 
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
     .section1_mobile{
         display: flex;
         width: 100%;
@@ -566,6 +648,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -652,14 +735,14 @@
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
 
       .outsection{
@@ -669,7 +752,7 @@
     /*section2*/
 }
 
-@media screen and (min-width:615px) and (max-width: 718px) { 
+@media screen and (min-width:615px) and (max-width: 719px) { 
     .main{
         display: none;
     }
@@ -677,12 +760,32 @@
     .main_mobile{
         width: 100%;
     }
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
 
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
     .maintitle_mobile{
         display: flex;
         font-size: 50px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1_mobile{
@@ -708,6 +811,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -788,13 +892,13 @@
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .outsection{
         padding-top: 60px;
@@ -808,16 +912,35 @@
     .main{
         display: none;
     }
+    
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
 
     .main_mobile{
         width: 100%;
     }
-
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
     .maintitle_mobile{
         display: flex;
         font-size: 50px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1_mobile{
@@ -837,12 +960,14 @@
     .textbox_moblie{
         line-height: 1.8;
         color: #858694;
+        font-size: 3.2vw;
     }
 
     .sec1textbox_mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -919,18 +1044,19 @@
           margin-top: 10px;
           margin-bottom: 10px;
           font-size: 15.5px;
+          word-break: keep-all;
       }
       .commit{
         font-size:20px;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
         font-size:20px;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .outsection{
         padding-top: 60px;
@@ -940,20 +1066,39 @@
 
 }
 
-@media screen and (max-width:495px){ 
+@media screen and (max-width:496px){ 
     .main{
         display: none;
+    }
+
+    .talkTitle{
+        width: auto;
+        color: #000000;
+        font-size: 39px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
     }
 
     .main_mobile{
         width: 100%;
     }
-
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 39px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 595;
+        margin-top: 30px;
+    }
     .maintitle_mobile {
         display: flex;
         font-size: 39px;
-        font-weight: bold;
+        font-weight: 590;
         animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1_mobile {
@@ -973,13 +1118,14 @@
     .textbox_moblie {
         line-height: 1.8;
         color: #858694;
-        font-size: 12px;
+        font-size: 3.1vw;
     }
 
     .sec1textbox_mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 25px;
     }
 
     .gobtn{
@@ -1061,19 +1207,20 @@
       .commit_detail{
           margin-top: 10px;
           margin-bottom: 10px;
+          word-break: keep-all;
       }
       .commit{
-        font-size:18px;
+        font-size : 3.8vw;
         color:#0E1013;
         margin-top:1px;
-        font-weight: 700;
+        font-weight: 550;
       }
       .commit > span{
-        font-size:18px;
+        font-size : 3.8vw;
         color:#80243F;
         margin-top:1px;
-        font-weight: 700;
-      }
+        font-weight: 550;
+        }
       .outsection{
         padding-top: 60px;
       }
@@ -1088,6 +1235,7 @@
     font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
     
 }
+
 
 
 

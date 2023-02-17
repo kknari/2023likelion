@@ -1,10 +1,17 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-style: normal;
+}
+
 *{
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumSquareNeo-Variable', sans-serif;
 }
 
 body{
     margin: 0;
 }
+
 
 .title{
     flex-shrink: 0;
@@ -16,8 +23,8 @@ body{
     line-height: 1.2;
     text-align: center;
     margin:  0 auto;
-    font-size: 50px;
-    margin-top : 40px;
+    font-size: 80px;
+    margin-top : 75px;
     animation: fadeInUp 1s;
 }
 
@@ -66,7 +73,7 @@ body{
     margin-bottom: 20px;
     font-weight: 500;
     font-style: normal;
-
+    word-break: break-all;
     color: #000000;
     font-size: 13px;
     letter-spacing: 0px;
@@ -77,12 +84,12 @@ body{
     display: flex;
     justify-content: flex-start;
     width: fit-content;
-    height: 30px ;
+    height: fit-content;
     padding:20px 20px 20px 20px;
     background-color: rgba(0, 0, 0, 0.03);
     border-radius: 3px 20px  20px 20px;
     margin-bottom: 20px;
-
+    word-break: break-all;
     font-weight: 500;
     font-style: normal;
     color: #000000;
@@ -129,6 +136,8 @@ body{
 }
 
 @media screen and (max-width:550px){
+
+    
     .talk {
         width:fit-content;
         height: auto; /* 72px */
@@ -140,7 +149,8 @@ body{
         text-align: center;
         margin:  0 auto;
         animation: fadeInUp 1.3s ease ;
-        margin : 0 3px 0 3px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .write{
@@ -181,13 +191,12 @@ body{
         margin-bottom: 20px;
         font-weight: 500;
         font-style: normal;
-    
         color: #000000;
         font-size: 13px;
         letter-spacing: 0px;
         line-height: 1.5;
         white-space:normal;
-        word-break:break-all
+        word-break: break-all;
     }
     
     .ans{
@@ -199,7 +208,7 @@ body{
         background-color: rgba(0, 0, 0, 0.03);
         border-radius: 3px 20px  20px 20px;
         margin-bottom: 20px;
-    
+        word-break: break-all;
         font-weight: 500;
         font-style: normal;
         color: #000000;
@@ -233,3 +242,34 @@ body{
     width:20px;
     height: 20px;
 }
+
+.p_wrap{
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.p_wrap > p{
+    word-break: keep-all;
+}
+
+
+/*토크 페이지네이션 원*/
+
+.here{
+    margin-right :5px;
+    background-color:#e8cad2;
+    padding:1px 5px 1px 5px;
+    border-radius:50%;
+    color:#000;
+}
+
+.other{
+    margin-right :5px;
+    padding:1px 5px 1px 5px;
+}
+
+.que > h3{
+    font-weight: 480;
+}
+
+

@@ -1,10 +1,7 @@
-.maintitle{
-    text-align: center;
-    margin-top: 56px;
-}
 .orgContent{
-    padding: 80px;
-    margin: 20px 0;
+    padding: 60px;
+    margin: 0;
+    margin-top: 20px;
 }
 .presidency{
     display: flex;
@@ -69,7 +66,7 @@
         margin: 20px;
     }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
     .member{
         padding: 20px 80px;
     }
@@ -186,4 +183,67 @@
         -ms-overflow-style: none; /* 인터넷 익스플로러 */
         scrollbar-width: none; /* 파이어폭스 */
     }
+}
+
+
+@media screen and (min-width:1080px) and (max-width: 1439px) {
+
+    .maintitle{
+        font-weight: 590;
+    }
+
+    .cardContent > h3{
+        font-weight: 595;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1079px) {
+	.maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+}
+
+
+@media screen and (min-width:719px) and (max-width: 767px) {
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+    
+}
+
+@media screen and (min-width:615px) and (max-width: 718px) { 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+    
+}
+
+@media screen and (min-width:496px) and (max-width: 615px) { 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+
+   
+}
+
+@media screen and (max-width:495px){ 
+    .maintitle{
+        font-weight: 590;
+    }
+    .cardContent > h3{
+        font-weight: 595;
+    }
+  
 }
