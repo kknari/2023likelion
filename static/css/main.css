@@ -188,7 +188,7 @@
     /*섹션 2 끝*/
 }
 
-@media screen and (min-width:1080px) and (max-width: 1439px) {
+@media screen and (min-width:1080px) and (max-width: 1440px) {
 
 	/* Tablet */
     .main{
@@ -352,7 +352,7 @@
 }
 
 
-@media screen and (min-width:768px) and (max-width: 1079px) {
+@media screen and (min-width:768px) and (max-width: 1080px) {
 	/* Tablet */
     .main{
         display: flex;
@@ -527,7 +527,7 @@
 
 /* 여기까지가 좌우 카드 느낌 정렬*/
 
-@media screen and (min-width:719px) and (max-width: 767px) {
+@media screen and (min-width:719px) and (max-width: 768px) {
 	/* Tablet */
     .main{
         display: none;
@@ -672,7 +672,7 @@
     /*section2*/
 }
 
-@media screen and (min-width:615px) and (max-width: 718px) { 
+@media screen and (min-width:615px) and (max-width: 719px) { 
     .main{
         display: none;
     }
@@ -947,7 +947,7 @@
 
 }
 
-@media screen and (max-width:495px){ 
+@media screen and (max-width:496px){ 
     .main{
         display: none;
     }
