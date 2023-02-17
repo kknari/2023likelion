@@ -12,10 +12,17 @@
 <div>
 
     <!--타이틀 -->
+<<<<<<< HEAD
+    <h1 class="title">TALK
+    </h1>
+
+    <p class="talk">덕성여자대학교 멋쟁이사자처럼을 위해 응원의 한마디를 남겨보세요!</p>
+=======
     <h1 class="maintitle">TALK</h1>
     <div class="p_wrap">
         <p class="talk">덕성여자대학교 멋쟁이사자처럼을 위해 응원의 한마디를 남겨보세요!</p>
     </div>
+>>>>>>> 7b5db44db48cdbe90479ac82b8ae230fc6bcc1a3
     
 
     <div class="comement">
@@ -61,15 +68,9 @@
 
 {% for p in posts.paginator.page_range %}
     {% if posts.number == p %} <!-- 현재 있는 페이지가 num과 같다면-->
-        <strong><a 
-            style="margin-right :5px;
-            background-color:#e8cad2;
-            paddin g:0 6px 0 6px;
-            border-radius:50%;
-            color:#000;
-            " href="?page={{ p }}">{{ p }}</a></strong>
+        <strong><a class="here" href="?page={{ p }}">{{ p }}</a></strong>
     {% else %}
-        <a style="margin-right :5px;padding:0 6px 0 6px;" href="?page={{ p }}">{{ p }}</a> <!-- 나머지 페이지들은 그냥 출력-->
+        <a class="other"href="?page={{ p }}">{{ p }}</a> <!-- 나머지 페이지들은 그냥 출력-->
     {% endif %}
 {% endfor %}
 

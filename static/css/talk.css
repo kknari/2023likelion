@@ -244,6 +244,19 @@ body{
 .p_wrap > p{
     word-break: keep-all;
 }
-.que > h3{
-    font-weight: 480;
+
+
+/*토크 페이지네이션 원*/
+
+.here{
+    margin-right :5px;
+    background-color:#e8cad2;
+    padding:0 6px 0 6px;
+    border-radius:50%;
+    color:#000;
+}
+
+.other{
+    margin-right :5px;
+    padding:0 6px 0 6px;
 }
