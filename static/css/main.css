@@ -45,6 +45,17 @@
         animation: fadeInUp 1s;
         text-align: center;
     }
+
+    .pmaintitle{
+        width: auto;
+        /* height: 96px; */
+        color: #000000;
+        font-size: 80px;
+        margin-top: 20px;
+        font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
+        animation: fadeInUp 1s;
+        text-align: center;
+    }
     
     .section1{
         display: flex;
@@ -211,6 +222,16 @@
         text-align: center;
     }
 
+    .pmaintitle{
+        width: auto;
+        height: 96px;
+        color: #000000;
+        font-size: 72px;
+        font-weight: 595;
+        animation: fadeInUp 1s;
+        text-align: center;
+    }
+
     .section1{
         display: flex;
         width: 100%;
@@ -366,6 +387,16 @@
         display: none;
     }
     .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 52px;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 590;
+        margin-top: 30px;
+    }
+
+    .pmaintitle{
         width: auto;
         color: #000000;
         font-size: 52px;
@@ -554,7 +585,6 @@
         width: auto;
         color: #000000;
         font-size: 50px;
-        font-weight: bold;
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 590;
@@ -699,7 +729,6 @@
         width: auto;
         color: #000000;
         font-size: 50px;
-        font-weight: bold;
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 590;
@@ -845,7 +874,6 @@
         width: auto;
         color: #000000;
         font-size: 50px;
-        font-weight: bold;
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 590;
@@ -994,7 +1022,6 @@
         width: auto;
         color: #000000;
         font-size: 39px;
-        font-weight: bold;
         animation: fadeInUp 1s;
         text-align: center;
         font-weight: 590;
