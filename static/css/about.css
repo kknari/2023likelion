@@ -54,9 +54,9 @@
     }
 
     .about-title{
-        font-size: 88px;
+        font-size: 80px;
         font-weight: bold;
-        margin-top: 56px;
+        margin-top: 75px;
     }
 
     .info-text-wrap{
@@ -144,9 +144,8 @@
     }
 
     .about-title{
-        font-size: 88px;
-        font-weight: bold;
-        margin-top: 56px;
+        font-size: 80px;
+        margin-top: 75px;
     }
 
     .swiper{
@@ -292,10 +291,8 @@
     }
 
     .about-title{
-        font-size: 78px;
-        font-weight: bold;
-        margin-top: 56px
-        ;
+        font-size: 80px;
+        margin-top: 75px;
     }
 
     .info-text-wrap{
