@@ -47,4 +47,6 @@ $('html').on("touchstart", function (e) {
       
     }
 });
+
+
 /* 메뉴 자동 닫기 끝*/
