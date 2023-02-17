@@ -43,6 +43,7 @@
         margin-top: 20px;
         font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
         animation: fadeInUp 1s;
+        text-align: center;
     }
     
     .section1{
