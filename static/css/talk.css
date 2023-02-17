@@ -140,7 +140,8 @@ body{
         text-align: center;
         margin:  0 auto;
         animation: fadeInUp 1.3s ease ;
-        margin : 0 3px 0 3px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .write{
@@ -243,7 +244,18 @@ body{
     word-break: keep-all;
 }
 
+<<<<<<< HEAD
+@media screen and (min-width : 1439px) {
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+}
+=======
 
+>>>>>>> efda17b735e2ead3b600e2330709bf9c1264150c
 
 @media screen and (min-width:1080px) and (max-width: 1439px) {
 
