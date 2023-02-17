@@ -6,9 +6,8 @@ body{
     margin: 0;
 }
 
-.maintitle{
-    
-    font-weight: 595;
+.title{
+    flex-shrink: 0;
     width: auto; /* 364px */
     height: auto; /* 96px */
     white-space: pre;

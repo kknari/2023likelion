@@ -43,6 +43,7 @@
         margin-top: 20px;
         font-family:'NanumSquareNeo-Variable','Apple SD Gothic Neo',Sans-serif;
         animation: fadeInUp 1s;
+        text-align: center;
     }
     
     .section1{
@@ -207,6 +208,7 @@
         font-size: 72px;
         font-weight: 595;
         animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1{
@@ -369,7 +371,9 @@
         font-size: 52px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        text-align: center;
         font-weight: 590;
+        margin-top: 30px;
     }
 
     .section1{
@@ -543,8 +547,19 @@
         font-weight: bold;
         animation: fadeInUp 1s;
         font-weight: 590;
+        margin-top: 40px;
+        text-align: center;
     }
-
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        font-weight: bold;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 590;
+        margin-top: 30px;
+    }
     .section1_mobile{
         display: flex;
         width: 100%;
@@ -680,12 +695,22 @@
     .main_mobile{
         width: 100%;
     }
-
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        font-weight: bold;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 590;
+        margin-top: 30px;
+    }
     .maintitle_mobile{
         display: flex;
         font-size: 50px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1_mobile{
@@ -816,12 +841,22 @@
     .main_mobile{
         width: 100%;
     }
-
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 50px;
+        font-weight: bold;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 590;
+        margin-top: 30px;
+    }
     .maintitle_mobile{
         display: flex;
         font-size: 50px;
         font-weight: bold;
         animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1_mobile{
@@ -955,12 +990,22 @@
     .main_mobile{
         width: 100%;
     }
-
+    .maintitle{
+        width: auto;
+        color: #000000;
+        font-size: 39px;
+        font-weight: bold;
+        animation: fadeInUp 1s;
+        text-align: center;
+        font-weight: 590;
+        margin-top: 30px;
+    }
     .maintitle_mobile {
         display: flex;
         font-size: 39px;
         font-weight: 590;
         animation: fadeInUp 1s;
+        text-align: center;
     }
 
     .section1_mobile {
