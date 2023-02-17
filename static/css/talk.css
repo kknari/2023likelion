@@ -16,8 +16,8 @@ body{
     line-height: 1.2;
     text-align: center;
     margin:  0 auto;
-    font-size: 50px;
-    margin-top : 40px;
+    font-size: 80px;
+    margin-top : 75px;
     animation: fadeInUp 1s;
 }
 
@@ -140,7 +140,8 @@ body{
         text-align: center;
         margin:  0 auto;
         animation: fadeInUp 1.3s ease ;
-        margin : 0 3px 0 3px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .write{
@@ -243,6 +244,14 @@ body{
     word-break: keep-all;
 }
 
+@media screen and (min-width : 1439px) {
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+}
 
 
 @media screen and (min-width:1080px) and (max-width: 1439px) {

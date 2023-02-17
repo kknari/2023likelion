@@ -1,6 +1,6 @@
 .maintitle{
     text-align: center;
-    margin-top: 56px;
+    margin-top: 75px;
 }
 .orgContent{
     padding: 80px;
@@ -69,7 +69,7 @@
         margin: 20px;
     }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
     .member{
         padding: 20px 80px;
     }
