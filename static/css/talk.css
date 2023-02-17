@@ -1,10 +1,17 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-style: normal;
+}
+
 *{
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumSquareNeo-Variable', sans-serif;
 }
 
 body{
     margin: 0;
 }
+
 
 .title{
     flex-shrink: 0;
@@ -265,3 +272,5 @@ body{
 .que > h3{
     font-weight: 480;
 }
+
+
