@@ -259,14 +259,14 @@ body{
 .here{
     margin-right :5px;
     background-color:#e8cad2;
-    padding:0 6px 0 6px;
+    padding:1px 5px 1px 5px;
     border-radius:50%;
     color:#000;
 }
 
 .other{
     margin-right :5px;
-    padding:0 6px 0 6px;
+    padding:1px 5px 1px 5px;
 }
 
 .que > h3{
