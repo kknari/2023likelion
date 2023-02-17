@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 
-.maintitle{
+.title{
     flex-shrink: 0;
     width: auto; /* 364px */
     height: auto; /* 96px */
@@ -244,76 +244,6 @@ body{
 .p_wrap > p{
     word-break: keep-all;
 }
-
-@media screen and (min-width : 1439px) {
-    .maintitle{
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-
-@media screen and (min-width:1080px) and (max-width: 1439px) {
-
-    .maintitle
-        {
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1079px) {
-    .maintitle
-        {
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-
-@media screen and (min-width:719px) and (max-width: 769kpx) {
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-@media screen and (min-width:615px) and (max-width: 718px) { 
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-}
-
-@media screen and (min-width:496px) and (max-width: 615px) { 
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
-   
-}
-
-@media screen and (max-width:495px){ 
-    .maintitle{
-    
-        font-weight: 590;
-    }
-    .que > h3{
-        font-weight: 590;
-    }
+.que > h3{
+    font-weight: 480;
 }
