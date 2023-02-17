@@ -59,7 +59,7 @@ body{
     display: flex;
     margin-left: auto;
     width:fit-content;
-    height: 30px ;
+    height: fit-content;
     padding:20px 20px 20px 20px;
     background-color: #e8cad2;
     border-radius:  20px 3px 20px 20px;
@@ -140,7 +140,8 @@ body{
         text-align: center;
         margin:  0 auto;
         animation: fadeInUp 1.3s ease ;
-        margin : 0 3px 0 3px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .write{
@@ -187,7 +188,7 @@ body{
         letter-spacing: 0px;
         line-height: 1.5;
         white-space:normal;
-        word-break:break-all
+        word-break: break-all;
     }
     
     .ans{
@@ -232,4 +233,79 @@ body{
 .page a{
     width:20px;
     height: 20px;
+}
+
+.p_wrap{
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.p_wrap > p{
+    word-break: keep-all;
+}
+
+@media screen and (min-width : 1439px) {
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:1080px) and (max-width: 1439px) {
+
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1079px) {
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+}
+
+
+@media screen and (min-width:719px) and (max-width: 767px) {
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:615px) and (max-width: 718px) { 
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+}
+
+@media screen and (min-width:496px) and (max-width: 615px) { 
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
+   
+}
+
+@media screen and (max-width:495px){ 
+    .title{
+        font-weight: 590;
+    }
+    .que > h3{
+        font-weight: 590;
+    }
 }
