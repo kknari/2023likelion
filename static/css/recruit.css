@@ -504,6 +504,7 @@ body{
         flex-direction: row;
         justify-content: space-evenly;
         margin: 100px 100px 0 100px;
+        
     }
 
     
@@ -710,5 +711,19 @@ body{
     }
     .question{
         font-weight: 590;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    .container{
+        display:flex;
+        flex-flow: row wrap;
+        align-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 100px 100px 0 100px;
+        padding : 0 10px 0 10px;
     }
 }
